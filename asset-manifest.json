@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7df0bfb6.css",
+    "main.js": "/static/js/main.6eb0394e.js",
+    "static/media/jenkins.svg": "/static/media/jenkins.d293485df4623cf71c766fff964b8604.svg",
+    "static/media/nodejs.svg": "/static/media/nodejs.5a3a9ca294db0539884810b6e6eafedd.svg",
+    "static/media/mongodb.svg": "/static/media/mongodb.74da918bb423b2ef1919b8fcc07dcb26.svg",
+    "static/media/express.svg": "/static/media/express.7e85c5130978e3593e65a44112bc7390.svg",
+    "static/media/mysql.svg": "/static/media/mysql.88631d0de40f60cec048c5f2549eaf37.svg",
+    "static/media/aws.svg": "/static/media/aws.b6e95e0a7891cbff4f1144c7a4d7bb80.svg",
+    "static/media/react.svg": "/static/media/react.e27571eaed899c642345e71163624ef9.svg",
+    "static/media/bash-icon.svg": "/static/media/bash-icon.31469aae70b8e95103fe760027703efa.svg",
+    "static/media/c-plusplus.svg": "/static/media/c-plusplus.3903c781fc7f522cf861687b41d82708.svg",
+    "static/media/microsoft-azure.svg": "/static/media/microsoft-azure.dccf0886148a259fa16ead84358ae8df.svg",
+    "static/media/python.svg": "/static/media/python.6a8b2999db46fb931134216e8fdfdb2c.svg",
+    "static/media/html-5.svg": "/static/media/html-5.e7638e3676622c76a46ece6c46136fd4.svg",
+    "static/media/css-3.svg": "/static/media/css-3.e7a9de36d9335d92932e93eb3b32deb9.svg",
+    "static/media/docker-icon.svg": "/static/media/docker-icon.d33285e5e47ca12603a0228b49aff3c2.svg",
+    "static/media/swift.svg": "/static/media/swift.daeb9c9bc485cafb585fd771f1e82b02.svg",
+    "static/media/javascript.svg": "/static/media/javascript.fd46ca41839433d73577989d86eb2fe2.svg",
+    "static/media/github.svg": "/static/media/github.d76fda815d1b905ff2037306e3f2029f.svg",
+    "index.html": "/index.html",
+    "static/media/linkedin.svg": "/static/media/linkedin.13f3aab8afad96f798a72797896f5ba1.svg",
+    "static/media/envelope-solid.svg": "/static/media/envelope-solid.0c57013b4b7c7bbc22166a0c52bcfbb1.svg",
+    "main.7df0bfb6.css.map": "/static/css/main.7df0bfb6.css.map",
+    "main.6eb0394e.js.map": "/static/js/main.6eb0394e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7df0bfb6.css",
+    "static/js/main.6eb0394e.js"
+  ]
+}
