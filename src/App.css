@@ -1,9 +1,6 @@
-
 .home-container {
   text-align: left;
   padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 40px;
   padding-bottom: 40px;
   user-select: none;
 }
@@ -24,49 +21,49 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  user-select: none; /* Prevent highlighting */
-  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover effect */
+  user-select: none;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .icon:hover {
-  transform: scale(1.2); /* Slightly increase size on hover */
-  filter: brightness(1.2); /* Slightly brighten the icon */
+  transform: scale(1.2);
+  filter: brightness(1.2);
 }
 
 .description {
-  max-width: 700px; /* Limit the width of the paragraph */
-  margin: 20px 0; /* Remove horizontal centering and keep space above */
-  font-size: 25px; /* Adjust font size for readability */
-  line-height: 1.5; /* Improve line spacing */
+  max-width: 700px;
+  margin: 20px 0;
+  font-size: 25px;
+  line-height: 1.5;
 }
 
 .section-header {
-  margin-bottom: 70px; /* Adds consistent spacing between sections */
+  margin-bottom: 0;
 }
 
 .skills-categories {
-  padding-left: 25px; /* Add indentation for all categories */
-  user-select: none; /* Prevent highlighting */
+  padding-left: 25px;
+  user-select: none;
 }
 
 .skills-category {
-  margin-bottom: 40px; /* Space between categories */
+  margin-bottom: 40px;
 }
 
 .skills-category h3 {
   font-size: 25px;
-  margin-bottom: 20px; 
-  color: var(--primary-color); /* Adjust for visibility */
+  margin-bottom: 20px;
+  color: var(--primary-color);
 }
 
 .skills-icons {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px; /* Space between icons */
+  gap: 30px;
 }
 
 .skill-icon {
-  width: 70px; /* Ensure all icons are the same size */
+  width: 70px;
   height: 70px;
   object-fit: contain;
 }
@@ -74,7 +71,8 @@
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Space between cards */
-  margin-top: 20px; /* Space above the grid */
-  justify-content: flex-start; /* Align cards to the left */
+  gap: 40px;
+  margin-top: 20px;
+  width: calc(100% - 100px); /* Accounting for home-container padding-left */
+  padding: 0;
 }

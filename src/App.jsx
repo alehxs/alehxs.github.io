@@ -147,8 +147,8 @@ function Projects() {
       githubLink: 'https://github.com/alehxs/coog-zoo',
     },
     {
-      image: '/TelemetricsSC.png',
-      title: '(WIP) F1 Telemetrics',
+      image: '/telemetricsSC.png',
+      title: '(WIP 🚧) F1 Telemetrics',
       description: 'A tool for visualizing F1 race data',
       githubLink: 'https://github.com/alehxs/telemetrics',
     },
@@ -158,6 +158,12 @@ function Projects() {
       description: 'An web application meant to help reduce carbon emissions.',
       githubLink: 'https://github.com/jaykeburger/climate-predictive-modeling',
     },
+    {
+      image: '/wordleSC.png',
+      title: 'Wordle',
+      description: 'A Wordle clone built with Python',
+      githubLink: 'https://github.com/alehxs/wordle'
+    }
   ];
 
   return (
