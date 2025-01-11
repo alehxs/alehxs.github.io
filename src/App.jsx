@@ -155,13 +155,13 @@ function Projects() {
     {
       image: '/predictifySC.png',
       title: 'Predictify',
-      description: 'An web application meant to help reduce carbon emissions.',
+      description: 'A full-stack web application with an aim to help reduce carbon emissions.',
       githubLink: 'https://github.com/jaykeburger/climate-predictive-modeling',
     },
     {
       image: '/wordleSC.png',
       title: 'Wordle',
-      description: 'A Wordle clone built with Python',
+      description: 'A wordle desktop application built with Python',
       githubLink: 'https://github.com/alehxs/wordle'
     }
   ];
