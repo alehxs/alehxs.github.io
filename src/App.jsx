@@ -62,7 +62,7 @@ function Header() {
 
 function IconLink({ href, src, alt }) {
   return (
-    <div className="icon-wrapper">
+    <div className="icon-wrapper" data-tooltip={alt}>
       <a href={href} target="_blank" rel="noopener noreferrer">
         <img src={src} alt={alt} className="icon" />
       </a>
@@ -101,12 +101,14 @@ function Skills() {
           <SkillIcon src={cplusplusIcon} alt="C++" />
           <SkillIcon src={bashIcon} alt="Bash" />
         </SkillsCategory>
+
         <SkillsCategory title="Frameworks & Libraries">
           <SkillIcon src={reactIcon} alt="React" />
           <SkillIcon src={nextjsIcon} alt="Next.js" />
           <SkillIcon src={djangoIcon} alt="Django" />
           <SkillIcon src={expressIcon} alt="Express" />
         </SkillsCategory>
+        
         <SkillsCategory title="Tools & Platforms">
           <SkillIcon src={linuxIcon} alt="Linux" />
           <SkillIcon src={awsIcon} alt="AWS" />
@@ -136,14 +138,14 @@ function SkillIcon({ src, alt }) {
 function Projects() {
   const projectData = [
     {
-      image: 'portfolioSC.png', // Use relative path from the public folder
+      image: 'portfolioSC.png', 
       title: 'Portfolio Website',
       description: 'A modern portfolio showcasing my work',
     },
     {
       image: '/coogzooSC.png',
       title: 'CoogZoo',
-      description: 'A full-stack zoo database web application',
+      description: 'Full-stack zoo management with CRUD for animals, exhibits, and tickets',
       githubLink: 'https://github.com/alehxs/coog-zoo',
     },
     {
@@ -155,7 +157,7 @@ function Projects() {
     {
       image: '/predictifySC.png',
       title: 'Predictify',
-      description: 'A full-stack web application with an aim to help reduce carbon emissions.',
+      description: 'A full-stack web application aiming to reduce carbon emissions',
       githubLink: 'https://github.com/jaykeburger/climate-predictive-modeling',
     },
     {
