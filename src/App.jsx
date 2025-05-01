@@ -150,8 +150,8 @@ function Projects() {
     },
     {
       image: '/telemetricsSC.png',
-      title: '(WIP 🚧) F1 Telemetrics',
-      description: 'A tool for visualizing F1 race data',
+      title: '(WIP 🚧) Telemetrics',
+      description: 'A Formula 1 telemetry dashboard with data visuals',
       githubLink: 'https://github.com/alehxs/telemetrics',
     },
     {
