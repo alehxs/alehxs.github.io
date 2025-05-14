@@ -109,24 +109,6 @@
   padding: 0;
 }
 
-.project-card {
-  border-radius: 12px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-.project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .skill-icon:hover {
   transform: scale(1.15);
@@ -156,17 +138,14 @@
     gap: 20px;
     width: 100%;
     margin-top: 20px;
+    align-items: center;
   }
 
   .project-card {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
+    width: 90%;
+    max-width: 500px;
   }
 
-  .project-card .project-image {
-    height: 200px;
-  }
 
   .skills-icons {
     justify-content: center;

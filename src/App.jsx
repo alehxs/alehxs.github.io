@@ -24,6 +24,8 @@ import pythonIcon from './svgs/python.svg';
 import reactIcon from './svgs/react.svg';
 import swiftIcon from './svgs/swift.svg';
 import linkIcon from './svgs/link.svg';
+import postgre from './svgs/postgresql.svg'
+import supabase from './svgs/supabase.svg'
 
 function Home() {
   return (
@@ -115,6 +117,8 @@ function Skills() {
           <SkillIcon src={dockerIcon} alt="Docker" />
           <SkillIcon src={jenkinsIcon} alt="Jenkins" />
           <SkillIcon src={mysqlIcon} alt="MySQL" />
+          <SkillIcon src={postgre} alt="PostgreSQL" />
+          <SkillIcon src={supabase} alt="Supabase" />
           <SkillIcon src={mongodbIcon} alt="MongoDB" />
         </SkillsCategory>
       </div>
@@ -139,9 +143,10 @@ function Projects() {
   const projectData = [
     {
       image: '/telemetricsSC.png',
-      title: '(WIP 🚧) Telemetrics',
-      description: 'A Formula 1 telemetry dashboard with data visuals',
+      title: 'Telemetrics',
+      description: 'Full-stack Formula 1 dashboard visualizing session telemetry, tyre strategy, and driver performance across seasons',
       githubLink: 'https://github.com/alehxs/telemetrics',
+      websiteLink: 'https://alsan.me/telemetrics/'
     },
     {
       image: 'portfolioSC.png', 

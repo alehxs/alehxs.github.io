@@ -59,3 +59,15 @@
 .link-icon:hover {
   transform: scale(1.2);
 }
+
+/* let the anchor wrapper sit transparently in the grid */
+.project-card-link {
+  display: contents;
+}
+
+/* override purple visited color on the card wrapper */
+.project-card-link:link,
+.project-card-link:visited {
+  color: inherit;
+  text-decoration: none;
+}
