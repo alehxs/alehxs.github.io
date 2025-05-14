@@ -138,6 +138,12 @@ function SkillIcon({ src, alt }) {
 function Projects() {
   const projectData = [
     {
+      image: '/telemetricsSC.png',
+      title: '(WIP 🚧) Telemetrics',
+      description: 'A Formula 1 telemetry dashboard with data visuals',
+      githubLink: 'https://github.com/alehxs/telemetrics',
+    },
+    {
       image: 'portfolioSC.png', 
       title: 'Portfolio Website',
       description: 'A modern portfolio showcasing my work',
@@ -147,12 +153,6 @@ function Projects() {
       title: 'CoogZoo',
       description: 'Full-stack zoo management with CRUD for animals, exhibits, and tickets',
       githubLink: 'https://github.com/alehxs/coog-zoo',
-    },
-    {
-      image: '/telemetricsSC.png',
-      title: '(WIP 🚧) Telemetrics',
-      description: 'A Formula 1 telemetry dashboard with data visuals',
-      githubLink: 'https://github.com/alehxs/telemetrics',
     },
     {
       image: '/predictifySC.png',
