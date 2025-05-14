@@ -10,6 +10,7 @@
   margin: 0; /* Remove margin since we're using gap */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  transition: transform 0.2s ease;
 }
 
 .project-image-container {
@@ -70,4 +71,12 @@
 .project-card-link:visited {
   color: inherit;
   text-decoration: none;
+}
+
+.project-card-link:hover .project-card {
+  transform: scale(1.02);
+}
+
+.project-card-link .project-card {
+  cursor: pointer;
 }
