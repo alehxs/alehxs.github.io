@@ -158,6 +158,7 @@ function Projects() {
       title: 'CoogZoo',
       description: 'Full-stack zoo management with CRUD for animals, exhibits, and tickets',
       githubLink: 'https://github.com/alehxs/coog-zoo',
+      websiteLink: 'https://alsan.me/coogzoo/'
     },
     {
       image: '/predictifySC.png',
