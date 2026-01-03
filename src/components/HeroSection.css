@@ -1,0 +1,117 @@
+.hero-magazine {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(135deg, var(--off-white) 0%, var(--cream) 100%);
+  border: 3px solid var(--deep-brown);
+  box-shadow:
+    8px 8px 0 var(--burnt-orange),
+    8px 8px 0 2px var(--deep-brown);
+  min-height: 400px;
+}
+
+.hero-content {
+  width: 100%;
+  position: relative;
+}
+
+.hero-corner-accent {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 60px;
+  height: 60px;
+  border-top: 3px solid var(--burnt-orange);
+  border-left: 3px solid var(--burnt-orange);
+}
+
+.hero-headline {
+  font-family: var(--font-headline);
+  font-size: clamp(4rem, 10vw, 7rem);
+  letter-spacing: var(--tracking-tight);
+  color: var(--deep-brown);
+  line-height: 0.9;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.hero-subline {
+  font-family: var(--font-headline);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: var(--tracking-wide);
+  color: var(--warm-brown);
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.hero-slash {
+  color: var(--burnt-orange);
+  font-size: 1.2em;
+}
+
+.hero-badge {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  background: var(--burnt-orange);
+  color: var(--off-white);
+  padding: 12px 40px;
+  font-family: var(--font-headline);
+  font-size: var(--text-lg);
+  letter-spacing: var(--tracking-wider);
+  box-shadow: 4px 4px 12px var(--shadow-deep);
+  white-space: nowrap;
+}
+
+.hero-stripe {
+  position: absolute;
+  bottom: -10px;
+  left: 20%;
+  width: 60%;
+  height: 6px;
+  background: var(--burnt-orange);
+  transform: skewX(-20deg);
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .hero-magazine {
+    padding: 30px 20px;
+    min-height: 300px;
+    box-shadow:
+      6px 6px 0 var(--burnt-orange),
+      6px 6px 0 2px var(--deep-brown);
+  }
+
+  .hero-badge {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: var(--text-base);
+  }
+
+  .hero-corner-accent {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-stripe {
+    height: 4px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero-magazine {
+    min-height: 350px;
+  }
+
+  .hero-badge {
+    padding: 10px 32px;
+  }
+}

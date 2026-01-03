@@ -1,17 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
 :root {
-  --background-color: rgba(255, 247, 237); 
-  --primary-color: rgba(41, 37, 36); 
-  --font-size: 20px;
-  --font-family: 'Inter', sans-serif;
+  /* Vintage Magazine Color Palette - Jeep XJ Aesthetic */
+  --burnt-orange: #C65D3B;
+  --rust-orange: #D97847;
+  --tan: #D4B896;
+  --cream: #F5EBD9;
+  --off-white: #FBF7F0;
+  --deep-brown: #3E2723;
+  --warm-brown: #5D4037;
+  --medium-brown: #795548;
+  --sepia: #8B7355;
+  --aged-paper: #E8DCC8;
+  --shadow-warm: rgba(62, 39, 35, 0.12);
+  --shadow-deep: rgba(62, 39, 35, 0.18);
+
+  /* Applied colors */
+  --bg-primary: var(--cream);
+  --bg-secondary: var(--aged-paper);
+  --bg-elevated: var(--off-white);
+  --bg-hero: var(--off-white);
+  --text-primary: var(--deep-brown);
+  --text-secondary: var(--warm-brown);
+  --text-tertiary: var(--medium-brown);
+  --accent-primary: var(--burnt-orange);
+  --accent-secondary: var(--rust-orange);
+  --shadow-soft: var(--shadow-warm);
+  --shadow-medium: var(--shadow-deep);
+
+  /* Font Families */
+  --font-display: 'EB Garamond', serif;
+  --font-headline: 'Bebas Neue', sans-serif;
+  --font-body: 'EB Garamond', serif;
+
+  /* Font Sizes - Magazine Typography Scale */
+  --text-xs: 0.875rem;
+  --text-sm: 1rem;
+  --text-base: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.5rem;
+  --text-4xl: 3.5rem;
+  --text-5xl: 4.5rem;
+  --text-6xl: 6rem;
+
+  /* Letter Spacing for Headlines */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.05em;
+  --tracking-wider: 0.1em;
+
+  /* Font Weights */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Line Heights */
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: var(--background-color); 
-  color: var(--primary-color); 
-  font-size: var(--font-size); 
-  font-family: var(--font-family); 
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: var(--text-base);
+  font-family: var(--font-body);
+  line-height: var(--leading-normal);
+}
+
+/* Vintage paper grain texture overlay */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.03;
+  pointer-events: none;
+  background-image:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paper'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.04' numOctaves='5' /%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paper)'/%3E%3C/svg%3E");
+  z-index: 9999;
 }
 
 /* div {
