@@ -1,0 +1,98 @@
+.contact-stamp {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background: var(--off-white);
+  border: 3px dashed var(--burnt-orange);
+  box-shadow:
+    4px 4px 12px var(--shadow-warm),
+    inset 0 0 0 8px var(--cream);
+  transition: all 0.3s ease;
+}
+
+.stamp-content {
+  text-align: center;
+}
+
+.stamp-header {
+  font-family: var(--font-headline);
+  font-size: var(--text-2xl);
+  letter-spacing: var(--tracking-wider);
+  color: var(--burnt-orange);
+  margin-bottom: 20px;
+}
+
+.stamp-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.stamp-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  transition: all 0.2s ease;
+  padding: 8px 12px;
+  border-radius: 4px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.stamp-link:hover {
+  background: var(--aged-paper);
+  color: var(--burnt-orange);
+}
+
+.stamp-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.stamp-link:hover .stamp-icon {
+  transform: scale(1.1);
+}
+
+.stamp-label {
+  font-weight: 500;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .contact-stamp {
+    position: static;
+    transform: rotate(0deg);
+    margin: 40px auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .contact-stamp:hover {
+    transform: rotate(0deg);
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .contact-stamp {
+    top: 60px;
+    right: 40px;
+    width: 200px;
+    padding: 25px;
+  }
+
+  .stamp-header {
+    font-size: var(--text-xl);
+  }
+
+  .stamp-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
