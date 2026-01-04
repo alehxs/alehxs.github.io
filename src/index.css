@@ -98,6 +98,36 @@ body::after {
   z-index: 9999;
 }
 
+/* Scroll animations */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger animation delays for multiple elements */
+.scroll-animate:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.scroll-animate:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.scroll-animate:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.scroll-animate:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
 /* div {
   padding-left: 50px;
   padding-right: 50px;
