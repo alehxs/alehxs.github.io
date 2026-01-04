@@ -11,9 +11,15 @@ import FeaturedProjectMagazine from './components/FeaturedProjectMagazine';
 import ProjectsMagazineLayout from './components/ProjectsMagazineLayout';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import { useScrollAnimation } from './hooks/useScrollAnimation';
 import './App.css';
 
 function Home() {
+  const [contactRef, contactVisible] = useScrollAnimation();
+  const [skillsRef, skillsVisible] = useScrollAnimation();
+  const [featuredRef, featuredVisible] = useScrollAnimation();
+  const [projectsRef, projectsVisible] = useScrollAnimation();
+
   // Remaining projects (excluding Telemetrics which is featured)
   const remainingProjects = [
     {
@@ -43,41 +49,55 @@ function Home() {
   ];
 
   return (
-    <div className="magazine-container">
-      {/* HERO SPREAD - Full width dramatic intro */}
-      <section className="magazine-hero-section">
-        <HeroSection />
-        <WhoAmICard />
-      </section>
+    <>
+      <div className="magazine-container">
+        {/* HERO SPREAD - Full width dramatic intro */}
+        <section className="magazine-hero-section">
+          <HeroSection />
+          <ContactCard />
+        </section>
 
-      {/* CONTACT SECTION - Accessible contact card */}
-      <section className="magazine-contact-section">
-        <ContactCard />
-      </section>
+        {/* ABOUT ME SECTION - Personal introduction */}
+        <section
+          ref={contactRef}
+          className={`magazine-contact-section scroll-animate ${contactVisible ? 'visible' : ''}`}
+        >
+          <WhoAmICard />
+        </section>
 
-      {/* SKILLS BREAKDOWN - Separate sections for each category */}
-      <section className="magazine-skills-section">
-        <LanguagesSection />
-        <FrameworksSection />
-        <ToolsSection />
-      </section>
+        {/* SKILLS BREAKDOWN - Separate sections for each category */}
+        <section
+          ref={skillsRef}
+          className={`magazine-skills-section scroll-animate ${skillsVisible ? 'visible' : ''}`}
+        >
+          <LanguagesSection />
+          <FrameworksSection />
+          <ToolsSection />
+        </section>
 
-      {/* FEATURED PROJECT - Full bleed layout */}
-      <section className="magazine-projects-section">
-        <FeaturedProjectMagazine />
-      </section>
+        {/* FEATURED PROJECT - Full bleed layout */}
+        <section
+          ref={featuredRef}
+          className={`magazine-projects-section scroll-animate ${featuredVisible ? 'visible' : ''}`}
+        >
+          <FeaturedProjectMagazine />
+        </section>
 
-      {/* OTHER PROJECTS - Asymmetric scattered layout */}
-      <section className="magazine-projects-section">
-        <ProjectsMagazineLayout projects={remainingProjects} />
-      </section>
+        {/* OTHER PROJECTS - Asymmetric scattered layout */}
+        <section
+          ref={projectsRef}
+          className={`magazine-projects-section scroll-animate ${projectsVisible ? 'visible' : ''}`}
+        >
+          <ProjectsMagazineLayout projects={remainingProjects} />
+        </section>
 
-      {/* FOOTER */}
-      <Footer />
+        {/* FOOTER */}
+        <Footer />
+      </div>
 
-      {/* SCROLL TO TOP BUTTON */}
+      {/* SCROLL TO TOP BUTTON - Outside container for viewport-fixed positioning */}
       <ScrollToTop />
-    </div>
+    </>
   );
 }
 
