@@ -10,9 +10,9 @@
 }
 
 .about-card--expanded {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 50px 60px;
+  padding: 50px;
   border-left: 6px solid var(--burnt-orange);
   background: var(--aged-paper);
 }
@@ -23,13 +23,62 @@
   letter-spacing: var(--tracking-wider);
   color: var(--text-primary);
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 
+/* 2-Column Spec Sheet Layout */
 .about-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 30% 70%;
+  gap: 50px;
   align-items: start;
+}
+
+/* Left Column: Quick Stats */
+.about-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-self: start;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--medium-brown);
+}
+
+.stat-item:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  font-family: var(--font-headline);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wider);
+  color: var(--burnt-orange);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  color: var(--text-primary);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Right Column: Narrative Bio */
+.about-narrative {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 50px;
+  align-self: start;
 }
 
 .about-text {
@@ -38,15 +87,11 @@
   line-height: 1.9;
   color: var(--text-primary);
   margin: 0;
+  text-align: justify;
 }
 
-.about-text--intro {
-  font-size: var(--text-lg);
-}
-
-.about-text--personal {
-  font-size: var(--text-lg);
-  line-height: 1.9;
+.about-text:first-child {
+  margin-top: -12px;
 }
 
 .about-divider {
@@ -54,8 +99,8 @@
 }
 
 .about-text strong {
-  color: var(--burnt-orange);
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--text-primary);
 }
 
 .about-accent-line {
@@ -80,20 +125,32 @@
 
   .about-content {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 35px;
+  }
+
+  .about-stats {
+    gap: 18px;
+  }
+
+  .stat-item {
+    padding-bottom: 12px;
+  }
+
+  .stat-label {
+    font-size: var(--text-xs);
+  }
+
+  .stat-value {
+    font-size: var(--text-sm);
+  }
+
+  .about-narrative {
+    gap: 16px;
   }
 
   .about-text {
     font-size: var(--text-base);
-    line-height: 1.7;
-  }
-
-  .about-text--intro {
-    font-size: var(--text-base);
-  }
-
-  .about-text--personal {
-    font-size: var(--text-base);
+    line-height: 1.8;
   }
 }
 
@@ -104,6 +161,10 @@
 
   .about-content {
     gap: 40px;
+  }
+
+  .about-narrative {
+    gap: 18px;
   }
 
   .about-text {
