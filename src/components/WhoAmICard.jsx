@@ -5,19 +5,34 @@ function WhoAmICard() {
     <div className="about-card about-card--expanded">
       <h2 className="about-header">ABOUT ME</h2>
       <div className="about-content">
-        <p className="about-text about-text--intro">
-          I'm a <strong>Software Engineer</strong> based in Houston,
-          passionate about <strong>full-stack development</strong>,{' '}
-          <strong>app development</strong>, and <strong>cybersecurity</strong>.
-        </p>
+        {/* Left Column: Quick Stats */}
+        <div className="about-stats">
+          <div className="stat-item">
+            <span className="stat-label">LOCATION</span>
+            <span className="stat-value">Houston, TX</span>
+          </div>
+          <div className="stat-item">
+            <span className="stat-label">DEGREE</span>
+            <span className="stat-value">B.S. Computer Science @ University of Houston</span>
+          </div>
+          <div className="stat-item">
+            <span className="stat-label">FOCUS</span>
+            <span className="stat-value">Full-Stack, iOS, & Cybersecurity</span>
+          </div>
+        </div>
 
-        <p className="about-text about-text--personal">
-          Beyond code, I'm driven by a love for continuous growth and exploration.
-          I stay disciplined through <strong>working out</strong>, fuel my competitive
-          spirit watching <strong>Formula One</strong>, express creativity by playing the{' '}
-          <strong>piano</strong>, and challenge myself by <strong>learning new languages</strong>—currently
-          working on Mandarin Chinese.
-        </p>
+        {/* Right Column: Narrative Bio */}
+        <div className="about-narrative">
+          <p className="about-text">
+            I am a recent Computer Science graduate from the University of Houston building scalable full-stack and iOS applications, with an additional interest in cybersecurity.
+          </p>
+          <p className="about-text">
+            My technical background demonstrates a wide range of experience, from developing software for UH Labs and securing a Hackathon victory to hosting workshops as a student organization officer.
+          </p>
+          <p className="about-text">
+            Outside of development, I strive for a polymathic lifestyle. I balance the gym and my passion for Formula One with the challenge of learning Mandarin Chinese, reading, and playing the piano.
+          </p>
+        </div>
       </div>
     </div>
   );
