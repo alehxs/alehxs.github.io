@@ -9,7 +9,7 @@ function FeaturedProject() {
     title: 'Telemetrics',
     description: 'Full-stack Formula 1 dashboard visualizing session telemetry, tyre strategy, and driver performance across seasons',
     githubLink: 'https://github.com/alehxs/telemetrics',
-    websiteLink: 'https://alsan.me/telemetrics/'
+    websiteLink: 'https://alehxs.com/telemetrics/'
   };
 
   return (
