@@ -1,0 +1,118 @@
+.blog-list-container {
+  min-height: 100vh;
+  padding: 60px 80px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  border-bottom: 4px solid var(--burnt-orange);
+}
+
+.blog-headline {
+  font-family: var(--font-headline);
+  font-size: var(--text-5xl);
+  letter-spacing: var(--tracking-wide);
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.blog-subheadline {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.blog-filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 60px;
+  padding: 30px;
+  background: var(--aged-paper);
+  border: 3px solid var(--deep-brown);
+  box-shadow: 6px 6px 0 var(--tan);
+}
+
+.blog-filter-btn {
+  font-family: var(--font-headline);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  padding: 10px 20px;
+  background: var(--off-white);
+  color: var(--text-primary);
+  border: 2px solid var(--deep-brown);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+
+.blog-filter-btn:hover {
+  background: var(--burnt-orange);
+  color: var(--off-white);
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 0 var(--deep-brown);
+}
+
+.blog-filter-btn.active {
+  background: var(--burnt-orange);
+  color: var(--off-white);
+  box-shadow: 4px 4px 0 var(--deep-brown);
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 60px;
+  padding: 40px 20px;
+}
+
+.blog-empty-state {
+  text-align: center;
+  padding: 80px 20px;
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .blog-list-container {
+    padding: 40px 24px;
+  }
+
+  .blog-headline {
+    font-size: var(--text-3xl);
+  }
+
+  .blog-subheadline {
+    font-size: var(--text-base);
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 20px 0;
+  }
+
+  .blog-filter-section {
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .blog-list-container {
+    padding: 50px 40px;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+  }
+}

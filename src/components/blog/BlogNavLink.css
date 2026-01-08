@@ -1,0 +1,43 @@
+.blog-nav-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-family: var(--font-headline);
+  font-size: var(--text-base);
+  transition: all 0.2s ease;
+  letter-spacing: 0.05em;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.blog-nav-link:hover {
+  color: var(--burnt-orange);
+  border-bottom-color: var(--burnt-orange);
+}
+
+.blog-nav-icon {
+  font-size: var(--text-xl);
+  transition: transform 0.2s ease;
+}
+
+.blog-nav-link:hover .blog-nav-icon {
+  transform: scale(1.15);
+}
+
+.blog-nav-label {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .blog-nav-link {
+    font-size: var(--text-sm);
+  }
+
+  .blog-nav-icon {
+    font-size: var(--text-lg);
+  }
+}
