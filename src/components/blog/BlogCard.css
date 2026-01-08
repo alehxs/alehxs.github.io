@@ -1,0 +1,100 @@
+.blog-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.blog-polaroid {
+  background: var(--off-white);
+  padding: 15px 15px 40px 15px;
+  box-shadow:
+    0 4px 12px rgba(62, 39, 35, 0.15),
+    0 10px 30px rgba(62, 39, 35, 0.1);
+  transition: all 0.3s ease;
+  transform-origin: center;
+  cursor: pointer;
+  border: 3px solid var(--deep-brown);
+}
+
+.blog-polaroid:hover {
+  transform: rotate(0deg) !important;
+  box-shadow: 8px 8px 0 var(--burnt-orange);
+  z-index: 10;
+}
+
+.blog-polaroid-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: var(--aged-paper);
+  margin-bottom: 15px;
+  border: 2px solid var(--warm-brown);
+}
+
+.blog-polaroid-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-polaroid-content {
+  position: relative;
+}
+
+.blog-date-stamp {
+  font-family: var(--font-headline);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  color: var(--burnt-orange);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.blog-polaroid-title {
+  font-family: var(--font-headline);
+  font-size: var(--text-xl);
+  color: var(--deep-brown);
+  margin-bottom: 12px;
+  letter-spacing: var(--tracking-normal);
+  line-height: var(--leading-tight);
+}
+
+.blog-polaroid-excerpt {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: var(--leading-normal);
+  margin-bottom: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.blog-tag {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  color: var(--deep-brown);
+  background: var(--tan);
+  padding: 4px 10px;
+  border-radius: 2px;
+  letter-spacing: 0.02em;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .blog-polaroid {
+    transform: rotate(0deg) !important;
+    padding: 12px 12px 30px 12px;
+  }
+
+  .blog-polaroid-title {
+    font-size: var(--text-lg);
+  }
+}
