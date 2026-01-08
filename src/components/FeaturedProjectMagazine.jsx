@@ -29,7 +29,7 @@ function FeaturedProjectMagazine() {
               <span>VIEW CODE</span>
             </a>
             <a
-              href="https://alsan.me/telemetrics/"
+              href="https://alehxs.com/telemetrics/"
               target="_blank"
               rel="noopener noreferrer"
               className="feature-btn feature-btn--primary"
