@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NotFound from './pages/404';
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 import HeroSection from './components/HeroSection';
 import WhoAmICard from './components/WhoAmICard';
 import ContactCard from './components/ContactCard';
@@ -32,7 +34,7 @@ function Home() {
       title: 'CoogZoo',
       description: 'Full-stack zoo management with CRUD for animals, exhibits, and tickets',
       githubLink: 'https://github.com/alehxs/coog-zoo',
-      websiteLink: 'https://alsan.me/coogzoo/'
+      websiteLink: 'https://alehxs.com/coogzoo/'
     },
     {
       image: '/predictifySC.png',
@@ -106,6 +108,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
