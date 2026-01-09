@@ -18,7 +18,7 @@ function BlogList({ posts }) {
       <div className="blog-header">
         <h1 className="blog-headline">STORIES & LEARNINGS</h1>
         <p className="blog-subheadline">
-          Thoughts on development, design, and everything in between
+          Thoughts on life, lessons, and everything in between.
         </p>
       </div>
 

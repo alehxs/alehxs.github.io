@@ -1,11 +1,11 @@
 # Alexander Sangurima - Portfolio
 
-A vintage magazine-style portfolio website showcasing my work as a Software Engineer, built with React and Vite. Inspired by classic Jeep XJ advertisements, featuring warm earth tones, bold typography, and asymmetric layouts.
+A vintage magazine-style portfolio website showcasing my work as a Software Engineer, built with React and Vite. Featuring sophisticated earth tones, bold typography, and asymmetric layouts inspired by vintage editorial design.
 
 ## Design Philosophy
 
 This portfolio breaks away from minimalist design trends to embrace a vintage magazine aesthetic with:
-- **Warm Earth Tones**: Burnt orange (#C65D3B), tan, cream, and deep brown palette
+- **Sophisticated Earth Tones**: Prussian blue (#2C4B5E), tan, cream, and deep brown palette
 - **Bold Typography**: Bebas Neue condensed headlines paired with elegant EB Garamond serif body text
 - **Magazine Layouts**: Asymmetric sections, polaroid-style project cards, and editorial-inspired spreads
 - **Subtle Interactions**: Scroll-triggered animations and refined hover effects that maintain the analog aesthetic
@@ -84,16 +84,27 @@ npm run preview
 
 ## Color Palette
 
+**Warm/Cool Contrast Strategy:**
+- Cool accents (Prussian Blue, Deep Teal) for energy and focus
+- Warm backgrounds (Cream, Tan, Aged Paper) for warmth and approachability
+- Cool neutrals (Charcoal, Slate Gray) for text and structure
+
 ```css
---burnt-orange: #C65D3B
---rust-orange: #D97847
---tan: #D4B896
---cream: #F5EBD9
---off-white: #FBF7F0
---deep-brown: #3E2723
---warm-brown: #5D4037
---medium-brown: #795548
---aged-paper: #E8DCC8
+/* Cool Accents */
+--burnt-orange: #2C4B5E  /* Prussian Blue */
+--rust-orange: #3D6E70   /* Deep Teal */
+
+/* Warm Backgrounds */
+--tan: #D4B896           /* Warm Tan */
+--cream: #F5EBD9         /* Warm Cream */
+--off-white: #FBF7F0     /* Off White */
+--aged-paper: #E8DCC8    /* Aged Paper */
+
+/* Cool Neutrals */
+--deep-brown: #2C3539    /* Cool Charcoal */
+--warm-brown: #556368    /* Slate Gray */
+--medium-brown: #6B7278  /* Medium Slate */
+--sepia: #8A9096         /* Silver Gray */
 ```
 
 ## Typography
