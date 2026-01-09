@@ -80,8 +80,9 @@
 .blog-tag {
   font-family: var(--font-body);
   font-size: var(--text-xs);
-  color: var(--deep-brown);
-  background: var(--tan);
+  color: var(--text-primary);
+  background: var(--off-white);
+  border: 1px solid var(--medium-brown);
   padding: 4px 10px;
   border-radius: 2px;
   letter-spacing: 0.02em;

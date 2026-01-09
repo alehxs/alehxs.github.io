@@ -36,7 +36,7 @@
   padding: 30px;
   background: var(--aged-paper);
   border: 3px solid var(--deep-brown);
-  box-shadow: 6px 6px 0 var(--tan);
+  box-shadow: 6px 6px 0 var(--medium-brown);
 }
 
 .blog-filter-btn {
