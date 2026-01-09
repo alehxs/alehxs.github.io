@@ -42,9 +42,7 @@
 
 .polaroid:hover {
   transform: rotate(0deg) !important;
-  box-shadow:
-    0 8px 24px var(--shadow-warm),
-    0 15px 40px var(--shadow-deep);
+  box-shadow: 8px 8px 0 var(--burnt-orange);
   z-index: 10;
 }
 
