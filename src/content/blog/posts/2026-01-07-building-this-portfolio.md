@@ -1,8 +1,8 @@
 ---
 title: "Building This Portfolio"
-date: "2026-01-15"
+date: "2026-01-07"
 excerpt: "A deep dive into the design decisions and technical implementation behind my vintage magazine-style portfolio website."
-tags: ["personal"]
+tags: ["lessons", "personal"]
 author: "Alexander Sangurima"
 ---
 
