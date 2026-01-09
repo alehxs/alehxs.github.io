@@ -1,8 +1,8 @@
 ---
 title: "The Art of Vintage Web Design"
-date: "2026-01-05"
+date: "2026-01-07"
 excerpt: "Exploring how to bring the warmth and character of vintage design to modern web experiences without sacrificing usability."
-tags: ["personal"]
+tags: ["learning", "other"]
 author: "Alexander Sangurima"
 ---
 
