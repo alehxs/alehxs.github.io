@@ -1,17 +1,25 @@
 :root {
-  /* Vintage Magazine Color Palette - Jeep XJ Aesthetic */
-  --burnt-orange: #C65D3B;
-  --rust-orange: #D97847;
-  --tan: #D4B896;
-  --cream: #F5EBD9;
-  --off-white: #FBF7F0;
-  --deep-brown: #3E2723;
-  --warm-brown: #5D4037;
-  --medium-brown: #795548;
-  --sepia: #8B7355;
-  --aged-paper: #E8DCC8;
-  --shadow-warm: rgba(62, 39, 35, 0.12);
-  --shadow-deep: rgba(62, 39, 35, 0.18);
+  /* Vintage Magazine Color Palette - Warm/Cool Contrast */
+
+  /* Cool Accents */
+  --burnt-orange: #2C4B5E;  /* Prussian Blue */
+  --rust-orange: #3D6E70;   /* Deep Teal */
+
+  /* Warm Backgrounds */
+  --tan: #D4B896;           /* Warm Tan */
+  --cream: #F5EBD9;         /* Warm Cream */
+  --off-white: #FBF7F0;     /* Off White */
+  --aged-paper: #E8DCC8;    /* Aged Paper */
+
+  /* Cool Neutrals (Text & Structure) */
+  --deep-brown: #2C3539;    /* Cool Charcoal */
+  --warm-brown: #556368;    /* Slate Gray */
+  --medium-brown: #6B7278;  /* Medium Slate */
+  --sepia: #8A9096;         /* Silver Gray */
+
+  /* Shadows */
+  --shadow-warm: rgba(44, 53, 57, 0.12);
+  --shadow-deep: rgba(44, 53, 57, 0.18);
 
   /* Applied colors */
   --bg-primary: var(--cream);
