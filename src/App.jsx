@@ -25,25 +25,25 @@ function Home() {
   // Remaining projects (excluding Telemetrics which is featured)
   const remainingProjects = [
     {
-      image: 'portfolioSC.png',
+      image: '/projects/portfolio.png',
       title: 'Portfolio Website',
       description: 'A modern portfolio showcasing my work',
     },
     {
-      image: '/coogzooSC.png',
+      image: '/projects/coogzoo.png',
       title: 'CoogZoo',
       description: 'Full-stack zoo management with CRUD for animals, exhibits, and tickets',
       githubLink: 'https://github.com/alehxs/coog-zoo',
       websiteLink: 'https://alehxs.com/coogzoo/'
     },
     {
-      image: '/predictifySC.png',
+      image: '/projects/predictify.png',
       title: 'Predictify',
       description: 'A full-stack web application aiming to reduce carbon emissions',
       githubLink: 'https://github.com/jaykeburger/climate-predictive-modeling',
     },
     {
-      image: '/wordleSC.png',
+      image: '/projects/wordle.png',
       title: 'Wordle',
       description: 'A wordle desktop application built with Python',
       githubLink: 'https://github.com/alehxs/wordle'

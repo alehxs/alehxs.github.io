@@ -5,7 +5,7 @@ import './FeaturedProject.css';
 
 function FeaturedProject() {
   const project = {
-    image: '/telemetricsSC.png',
+    image: '/projects/telemetrics.png',
     title: 'Telemetrics',
     description: 'Full-stack Formula 1 dashboard visualizing session telemetry, tyre strategy, and driver performance across seasons',
     githubLink: 'https://github.com/alehxs/telemetrics',
