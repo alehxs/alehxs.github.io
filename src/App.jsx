@@ -24,9 +24,11 @@ function Home() {
   // Remaining projects (excluding Telemetrics which is featured)
   const remainingProjects = [
     {
-      image: '/projects/portfolio.png',
-      title: 'Portfolio Website',
-      description: 'A modern portfolio showcasing my work',
+      image: '/projects/brain-web.png',
+      title: 'The BRAIN Center Website',
+      description: 'Redesigned an NSF research center\'s website, migrating from legacy Wordpress to a modern Next.js stack',
+      githubLink: 'https://github.com/alehxs/brain-web',
+      websiteLink: 'https://brain-web-rho.vercel.app/'
     },
     {
       image: '/projects/coogzoo.png',
@@ -46,7 +48,12 @@ function Home() {
       title: 'Wordle',
       description: 'A wordle desktop application built with Python',
       githubLink: 'https://github.com/alehxs/wordle'
-    }
+    },
+    {
+      image: '/projects/portfolio.png',
+      title: 'Portfolio Website',
+      description: 'A modern portfolio showcasing my work',
+    },
   ];
 
   return (
