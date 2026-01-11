@@ -1,4 +1,3 @@
-import React from 'react';
 import './ProjectCard.css';
 import githubIcon from '../svgs/github.svg';
 import linkIcon from '../svgs/link.svg';

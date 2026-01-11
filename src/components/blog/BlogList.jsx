@@ -54,7 +54,7 @@ function BlogList({ posts }) {
 
       {filteredPosts.length === 0 && (
         <div className="blog-empty-state">
-          <p>No posts found with tag "{selectedTag}"</p>
+          <p>No posts found with tag &quot;{selectedTag}&quot;</p>
         </div>
       )}
     </div>

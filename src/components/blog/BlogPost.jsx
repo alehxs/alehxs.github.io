@@ -44,20 +44,20 @@ function BlogPost({ post }) {
           remarkPlugins={[remarkGfm]}
           rehypePlugins={[rehypeRaw, rehypeSanitize]}
           components={{
-            h1: ({node, ...props}) => <h1 className="markdown-h1" {...props} />,
-            h2: ({node, ...props}) => <h2 className="markdown-h2" {...props} />,
-            h3: ({node, ...props}) => <h3 className="markdown-h3" {...props} />,
-            a: ({node, ...props}) => <a className="markdown-link" {...props} />,
-            img: ({node, ...props}) => (
+            h1: (props) => <h1 className="markdown-h1" {...props} />,
+            h2: (props) => <h2 className="markdown-h2" {...props} />,
+            h3: (props) => <h3 className="markdown-h3" {...props} />,
+            a: (props) => <a className="markdown-link" {...props} />,
+            img: (props) => (
               <span className="markdown-image-wrapper">
                 <img className="markdown-image" {...props} />
               </span>
             ),
-            code: ({node, inline, ...props}) =>
+            code: ({inline, ...props}) =>
               inline
                 ? <code className="markdown-code-inline" {...props} />
                 : <code className="markdown-code-block" {...props} />,
-            blockquote: ({node, ...props}) => <blockquote className="markdown-blockquote" {...props} />,
+            blockquote: (props) => <blockquote className="markdown-blockquote" {...props} />,
           }}
         >
           {content}
