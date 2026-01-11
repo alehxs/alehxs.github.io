@@ -1,4 +1,4 @@
-# Alexander Sangurima - Portfolio
+# Personal Portfolio
 
 A vintage magazine-style portfolio website showcasing my work as a Software Engineer, built with React and Vite. Featuring sophisticated earth tones, bold typography, and asymmetric layouts inspired by vintage editorial design.
 
