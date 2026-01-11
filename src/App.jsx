@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NotFound from './pages/404';
 import BlogPage from './pages/BlogPage';

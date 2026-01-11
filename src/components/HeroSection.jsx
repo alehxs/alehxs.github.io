@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import './HeroSection.css';
 
@@ -18,7 +17,7 @@ function HeroSection() {
         </h1>
 
         <div className="hero-subline">
-          <span className="hero-slash">//</span>
+          <span className="hero-slash">{"/"}/</span>
           <span>SANGURIMA</span>
         </div>
 
