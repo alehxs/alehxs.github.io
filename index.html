@@ -18,18 +18,6 @@
 
 <body>
   <div id="root"></div>
-  <script>
-    // Handle redirect from 404.html - GitHub Pages SPA workaround
-    (function() {
-      var query = window.location.search;
-      if (query && query[1] === '/') {
-        var route = query.slice(2).split('&')[0].replace(/~and~/g, '&');
-        if (route) {
-          window.history.replaceState(null, null, '/' + route);
-        }
-      }
-    })();
-  </script>
   <!-- Cloudflare Web Analytics -->
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d3a9e32e01a547b5a1f1b9559c993f01"}'></script>
   <!-- End Cloudflare Web Analytics -->
