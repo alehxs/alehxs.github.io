@@ -24,6 +24,12 @@ function Home() {
   // Remaining projects (excluding Telemetrics which is featured)
   const remainingProjects = [
     {
+      image: '/projects/menui.png',
+      title: 'Menui',
+      description: 'An iOS app using OCR to scan and digitize restaurant menus, extracting dish names and images for easy browsing',
+      githubLink: 'https://github.com/alehxs/menui',
+    },
+    {
       image: '/projects/brain-web.png',
       title: 'The BRAIN Center Website',
       description: 'Redesigned an NSF research center\'s website, migrating from legacy Wordpress to a modern Next.js stack',
@@ -33,26 +39,26 @@ function Home() {
     {
       image: '/projects/coogzoo.png',
       title: 'CoogZoo',
-      description: 'Full-stack zoo management with CRUD for animals, exhibits, and tickets',
+      description: 'A zoo management system with React, Node.js, and MySQL featuring role-based access for managers, employees, and customers',
       githubLink: 'https://github.com/alehxs/coog-zoo',
       websiteLink: 'https://alehxs.com/coogzoo/'
     },
     {
       image: '/projects/predictify.png',
       title: 'Predictify',
-      description: 'A full-stack web application aiming to reduce carbon emissions',
+      description: 'A machine learning app using Python and React to predict CO2 emissions with interactive visualizations (won 1st place at CodeRED)',
       githubLink: 'https://github.com/jaykeburger/climate-predictive-modeling',
     },
     {
       image: '/projects/wordle.png',
       title: 'Wordle',
-      description: 'A wordle desktop application built with Python',
+      description: 'A pygame-powered Wordle replica built with test-driven development and comprehensive unit tests',
       githubLink: 'https://github.com/alehxs/wordle'
     },
     {
       image: '/projects/portfolio.png',
       title: 'Portfolio Website',
-      description: 'A modern portfolio showcasing my work',
+      description: 'A React-based portfolio with a magazine-inspired layout and smooth scroll animations (you\'re looking at it right now)',
     },
   ];
 
