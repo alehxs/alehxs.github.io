@@ -1,4 +1,3 @@
-import { Typewriter } from 'react-simple-typewriter';
 import './HeroSection.css';
 
 function HeroSection() {
@@ -7,14 +6,7 @@ function HeroSection() {
       <div className="hero-content">
         <div className="hero-corner-accent"></div>
 
-        <h1 className="hero-headline">
-          <Typewriter
-            words={["ALEXANDER"]}
-            loop={1}
-            cursor={false}
-            typeSpeed={75}
-          />
-        </h1>
+        <h1 className="hero-headline">ALEXANDER</h1>
 
         <div className="hero-subline">
           <span className="hero-slash">{"/"}/</span>
