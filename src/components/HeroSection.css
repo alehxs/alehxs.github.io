@@ -6,7 +6,7 @@
   background: linear-gradient(135deg, var(--off-white) 0%, var(--cream) 100%);
   border: 3px solid var(--deep-brown);
   box-shadow:
-    8px 8px 0 var(--burnt-orange),
+    8px 8px 0 var(--prussian-blue),
     8px 8px 0 2px var(--deep-brown);
   min-height: 400px;
 }
@@ -22,8 +22,8 @@
   left: -20px;
   width: 60px;
   height: 60px;
-  border-top: 3px solid var(--burnt-orange);
-  border-left: 3px solid var(--burnt-orange);
+  border-top: 3px solid var(--prussian-blue);
+  border-left: 3px solid var(--prussian-blue);
 }
 
 .hero-headline {
@@ -50,7 +50,7 @@
 }
 
 .hero-slash {
-  color: var(--burnt-orange);
+  color: var(--prussian-blue);
   font-size: 1.2em;
 }
 
@@ -59,7 +59,7 @@
   right: -20px;
   top: 50%;
   transform: translateY(-50%) rotate(90deg);
-  background: var(--burnt-orange);
+  background: var(--prussian-blue);
   color: var(--off-white);
   padding: 12px 40px;
   font-family: var(--font-headline);
@@ -76,7 +76,7 @@
   left: 20%;
   width: 60%;
   height: 6px;
-  background: var(--burnt-orange);
+  background: var(--prussian-blue);
   transform: skewX(-20deg);
 }
 
@@ -86,7 +86,7 @@
     padding: 30px 20px;
     min-height: auto;
     box-shadow:
-      6px 6px 0 var(--burnt-orange),
+      6px 6px 0 var(--prussian-blue),
       6px 6px 0 2px var(--deep-brown);
   }
 

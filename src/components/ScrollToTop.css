@@ -4,7 +4,7 @@
   right: 40px;
   width: 56px;
   height: 56px;
-  background: var(--burnt-orange);
+  background: var(--prussian-blue);
   border: 3px solid var(--deep-brown);
   border-radius: 0;
   color: var(--off-white);
@@ -12,17 +12,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
   z-index: 10000;
   box-shadow: 4px 4px 0 var(--deep-brown);
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.scroll-to-top:hover {
+.scroll-to-top--visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.scroll-to-top--visible:hover {
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0 var(--deep-brown);
 }
 
-.scroll-to-top:active {
+.scroll-to-top--visible:active {
   transform: translate(4px, 4px);
   box-shadow: none;
 }

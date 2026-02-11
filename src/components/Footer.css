@@ -32,10 +32,10 @@
   font-family: var(--font-headline);
   font-size: var(--text-sm);
   letter-spacing: var(--tracking-wide);
-  color: var(--burnt-orange);
+  color: var(--prussian-blue);
   text-decoration: none;
   text-transform: uppercase;
-  border-bottom: 2px solid var(--burnt-orange);
+  border-bottom: 2px solid var(--prussian-blue);
   transition: all 0.2s ease;
   align-self: flex-start;
 }

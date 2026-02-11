@@ -2,7 +2,7 @@
   width: 100%;
   padding: 40px;
   background: var(--aged-paper);
-  border-left: 6px solid var(--burnt-orange);
+  border-left: 6px solid var(--prussian-blue);
   position: relative;
   min-height: 300px;
   display: flex;
@@ -46,7 +46,7 @@
 }
 
 .stamp-link:hover {
-  color: var(--burnt-orange);
+  color: var(--prussian-blue);
 }
 
 .stamp-icon {
