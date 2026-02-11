@@ -2,7 +2,7 @@
   position: relative;
   padding: 40px;
   background: var(--aged-paper);
-  border-left: 6px solid var(--burnt-orange);
+  border-left: 6px solid var(--prussian-blue);
   min-height: 300px;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 50px;
-  border-left: 6px solid var(--burnt-orange);
+  border-left: 6px solid var(--prussian-blue);
   background: var(--aged-paper);
 }
 
@@ -58,7 +58,7 @@
   font-family: var(--font-headline);
   font-size: var(--text-sm);
   letter-spacing: var(--tracking-wider);
-  color: var(--burnt-orange);
+  color: var(--prussian-blue);
   text-transform: uppercase;
   font-weight: 700;
 }

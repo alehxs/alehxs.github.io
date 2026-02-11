@@ -18,7 +18,7 @@
 
 .blog-polaroid:hover {
   transform: rotate(0deg) !important;
-  box-shadow: 8px 8px 0 var(--burnt-orange);
+  box-shadow: 8px 8px 0 var(--prussian-blue);
   z-index: 10;
 }
 
@@ -45,7 +45,7 @@
   font-family: var(--font-headline);
   font-size: var(--text-xs);
   letter-spacing: var(--tracking-wide);
-  color: var(--burnt-orange);
+  color: var(--prussian-blue);
   margin-bottom: 8px;
   text-transform: uppercase;
 }

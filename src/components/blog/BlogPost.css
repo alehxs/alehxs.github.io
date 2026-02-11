@@ -11,22 +11,22 @@
   font-family: var(--font-headline);
   font-size: var(--text-sm);
   letter-spacing: var(--tracking-wide);
-  color: var(--burnt-orange);
+  color: var(--prussian-blue);
   text-decoration: none;
   margin-bottom: 40px;
   padding: 8px 16px;
-  border: 2px solid var(--burnt-orange);
+  border: 2px solid var(--prussian-blue);
   transition: all 0.2s ease;
 }
 
 .blog-back-link:hover {
-  background: var(--burnt-orange);
+  background: var(--prussian-blue);
   color: var(--off-white);
   transform: translateX(-4px);
 }
 
 .blog-post-header {
-  border-bottom: 4px solid var(--burnt-orange);
+  border-bottom: 4px solid var(--prussian-blue);
   padding-bottom: 30px;
   margin-bottom: 40px;
   text-align: center;
@@ -36,7 +36,7 @@
   font-family: var(--font-headline);
   font-size: var(--text-sm);
   letter-spacing: var(--tracking-wider);
-  color: var(--burnt-orange);
+  color: var(--prussian-blue);
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -62,7 +62,7 @@
   font-family: var(--font-body);
   font-size: var(--text-sm);
   color: var(--off-white);
-  background: var(--burnt-orange);
+  background: var(--prussian-blue);
   padding: 6px 14px;
   border-radius: 2px;
   letter-spacing: 0.02em;
@@ -102,7 +102,7 @@
   color: var(--deep-brown);
   margin: 50px 0 25px 0;
   letter-spacing: var(--tracking-normal);
-  border-bottom: 3px solid var(--burnt-orange);
+  border-bottom: 3px solid var(--prussian-blue);
   padding-bottom: 10px;
 }
 
@@ -120,7 +120,7 @@
   content: '//';
   position: absolute;
   left: 0;
-  color: var(--burnt-orange);
+  color: var(--prussian-blue);
 }
 
 .markdown-h3 {
@@ -136,14 +136,14 @@
 }
 
 .markdown-link {
-  color: var(--burnt-orange);
+  color: var(--prussian-blue);
   text-decoration: none;
-  border-bottom: 2px solid var(--burnt-orange);
+  border-bottom: 2px solid var(--prussian-blue);
   transition: all 0.2s ease;
 }
 
 .markdown-link:hover {
-  background: var(--burnt-orange);
+  background: var(--prussian-blue);
   color: var(--off-white);
   padding: 2px 4px;
 }
@@ -166,7 +166,7 @@
   font-family: 'Courier New', monospace;
   font-size: 0.9em;
   background: var(--aged-paper);
-  color: var(--burnt-orange);
+  color: var(--prussian-blue);
   padding: 2px 6px;
   border-radius: 2px;
   border: 1px solid var(--tan);
@@ -181,14 +181,14 @@
   padding: 20px;
   margin: 30px 0;
   border: 3px solid var(--deep-brown);
-  border-left: 6px solid var(--burnt-orange);
+  border-left: 6px solid var(--prussian-blue);
   overflow-x: auto;
   line-height: 1.6;
   white-space: pre;
 }
 
 .markdown-blockquote {
-  border-left: 6px solid var(--burnt-orange);
+  border-left: 6px solid var(--prussian-blue);
   background: var(--aged-paper);
   padding: 20px 30px;
   margin: 30px 0;
@@ -208,7 +208,7 @@
 }
 
 .blog-post-content ul li::marker {
-  color: var(--burnt-orange);
+  color: var(--prussian-blue);
 }
 
 /* Responsive */
