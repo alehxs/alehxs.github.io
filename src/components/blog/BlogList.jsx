@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import BlogCard from './BlogCard';
 import { getAllTags } from '../../utils/markdownUtils';
 import './BlogList.css';
@@ -15,6 +16,7 @@ function BlogList({ posts }) {
 
   return (
     <div className="blog-list-container">
+      <Link to="/" className="blog-back-link">← Portfolio</Link>
       <div className="blog-header">
         <h1 className="blog-headline">STORIES & LEARNINGS</h1>
         <p className="blog-subheadline">

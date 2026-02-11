@@ -1,10 +1,13 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Footer.css';
 import envelopeIcon from '../svgs/envelope-solid 2.svg';
 import githubIcon from '../svgs/github.svg';
 import linkedinIcon from '../svgs/linkedin.svg';
 
 function Footer() {
+  const { pathname } = useLocation();
+  const isBlog = pathname.startsWith('/blog');
+
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -12,9 +15,11 @@ function Footer() {
           <p className="footer-text">
             © 2026 Alexander Sangurima
           </p>
-          <Link to="/blog" className="footer-blog-link">
-            Read the Blog
-          </Link>
+          {!isBlog && (
+            <Link to="/blog" className="footer-blog-link">
+              Read the Blog
+            </Link>
+          )}
         </div>
         <div className="footer-links">
           <a href="mailto:alex@sangurima.com" target="_blank" rel="noopener noreferrer" className="footer-link">
