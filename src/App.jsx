@@ -1,7 +1,6 @@
+import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NotFound from './pages/404';
-import BlogPage from './pages/BlogPage';
-import BlogPostPage from './pages/BlogPostPage';
 import HeroSection from './components/HeroSection';
 import WhoAmICard from './components/WhoAmICard';
 import ContactCard from './components/ContactCard';
@@ -15,6 +14,9 @@ import ScrollToTop from './components/ScrollToTop';
 import { useScrollAnimation } from './hooks/useScrollAnimation';
 import './App.css';
 
+const BlogPage = lazy(() => import('./pages/BlogPage'));
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
+
 function Home() {
   const [contactRef, contactVisible] = useScrollAnimation();
   const [skillsRef, skillsVisible] = useScrollAnimation();
@@ -24,39 +26,39 @@ function Home() {
   // Remaining projects (excluding Telemetrics which is featured)
   const remainingProjects = [
     {
-      image: '/projects/menui.png',
+      image: '/projects/menui.webp',
       title: 'Menui',
       description: 'An iOS app using OCR to scan and digitize restaurant menus, extracting dish names and images for easy browsing',
       githubLink: 'https://github.com/alehxs/menui',
     },
     {
-      image: '/projects/brain-web.png',
+      image: '/projects/brain-web.webp',
       title: 'The BRAIN Center Website',
       description: 'Redesigned an NSF research center\'s website, migrating from legacy Wordpress to a modern Next.js stack',
       githubLink: 'https://github.com/alehxs/brain-web',
       websiteLink: 'https://brain-web-rho.vercel.app/'
     },
     {
-      image: '/projects/coogzoo.png',
+      image: '/projects/coogzoo.webp',
       title: 'CoogZoo',
       description: 'A zoo management system with React, Node.js, and MySQL featuring role-based access for managers, employees, and customers',
       githubLink: 'https://github.com/alehxs/coog-zoo',
       websiteLink: 'https://alehxs.com/coogzoo/'
     },
     {
-      image: '/projects/predictify.png',
+      image: '/projects/predictify.webp',
       title: 'Predictify',
       description: 'A machine learning app using Python and React to predict CO2 emissions with interactive visualizations (won 1st place at CodeRED)',
       githubLink: 'https://github.com/jaykeburger/climate-predictive-modeling',
     },
     {
-      image: '/projects/wordle.png',
+      image: '/projects/wordle.webp',
       title: 'Wordle',
       description: 'A pygame-powered Wordle replica built with test-driven development and comprehensive unit tests',
       githubLink: 'https://github.com/alehxs/wordle'
     },
     {
-      image: '/projects/portfolio.png',
+      image: '/projects/portfolio.webp',
       title: 'Portfolio Website',
       description: 'A React-based portfolio with a magazine-inspired layout and smooth scroll animations (you\'re looking at it right now)',
     },
@@ -118,12 +120,14 @@ function Home() {
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog/:slug" element={<BlogPostPage />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <Suspense fallback={<div style={{ minHeight: '100vh', backgroundColor: 'var(--bg-primary)' }} />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
     </Router>
   );
 }
