@@ -14,7 +14,7 @@ function BlogCard({ post, rotation }) {
       >
         {coverImage && (
           <div className="blog-polaroid-image">
-            <img src={coverImage} alt={title} />
+            <img src={coverImage} alt={title} width="800" height="450" loading="lazy" />
           </div>
         )}
         <div className="blog-polaroid-content">

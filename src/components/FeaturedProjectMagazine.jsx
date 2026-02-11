@@ -7,7 +7,7 @@ function FeaturedProjectMagazine() {
 
       <div className="feature-layout">
         <div className="feature-image-wrapper">
-          <img src="/projects/telemetrics.png" alt="Telemetrics Dashboard" className="feature-image" />
+          <img src="/projects/telemetrics.webp" alt="Telemetrics Dashboard" className="feature-image" width="800" height="450" />
         </div>
 
         <div className="feature-content">
