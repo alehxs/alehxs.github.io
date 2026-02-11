@@ -2,8 +2,8 @@
   /* Vintage Magazine Color Palette - Warm/Cool Contrast */
 
   /* Cool Accents */
-  --burnt-orange: #2C4B5E;  /* Prussian Blue */
-  --rust-orange: #3D6E70;   /* Deep Teal */
+  --prussian-blue: #2C4B5E; /* Prussian Blue */
+  --deep-teal: #3D6E70;     /* Deep Teal */
 
   /* Warm Backgrounds */
   --tan: #D4B896;           /* Warm Tan */
@@ -29,8 +29,8 @@
   --text-primary: var(--deep-brown);
   --text-secondary: var(--warm-brown);
   --text-tertiary: var(--medium-brown);
-  --accent-primary: var(--burnt-orange);
-  --accent-secondary: var(--rust-orange);
+  --accent-primary: var(--prussian-blue);
+  --accent-secondary: var(--deep-teal);
   --shadow-soft: var(--shadow-warm);
   --shadow-medium: var(--shadow-deep);
 
