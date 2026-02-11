@@ -9,7 +9,7 @@
   text-align: center;
   margin-bottom: 60px;
   padding-bottom: 40px;
-  border-bottom: 4px solid var(--burnt-orange);
+  border-bottom: 4px solid var(--prussian-blue);
 }
 
 .blog-headline {
@@ -53,14 +53,14 @@
 }
 
 .blog-filter-btn:hover {
-  background: var(--burnt-orange);
+  background: var(--prussian-blue);
   color: var(--off-white);
   transform: translateY(-2px);
   box-shadow: 3px 3px 0 var(--deep-brown);
 }
 
 .blog-filter-btn.active {
-  background: var(--burnt-orange);
+  background: var(--prussian-blue);
   color: var(--off-white);
   box-shadow: 4px 4px 0 var(--deep-brown);
 }
