@@ -65,7 +65,7 @@ function Home() {
   ];
 
   return (
-    <>
+    <main>
       <div className="magazine-container">
         {/* HERO SPREAD - Full width dramatic intro */}
         <section className="magazine-hero-section">
@@ -113,7 +113,7 @@ function Home() {
 
       {/* SCROLL TO TOP BUTTON - Outside container for viewport-fixed positioning */}
       <ScrollToTop />
-    </>
+    </main>
   );
 }
 
