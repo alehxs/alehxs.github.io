@@ -1,3 +1,11 @@
+import { Buffer } from 'buffer';
+
+// Polyfill Buffer for gray-matter (only loads with blog chunk)
+if (!window.Buffer) {
+  window.Buffer = Buffer;
+  globalThis.Buffer = Buffer;
+}
+
 import matter from 'gray-matter';
 
 /**
