@@ -20,7 +20,7 @@ function ProjectPolaroid({ project, rotation }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub
+                GitHub - {project.title}
               </a>
             )}
             {project.websiteLink && (
