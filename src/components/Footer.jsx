@@ -11,27 +11,27 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <div className="footer-left">
+        <div className="footer-top">
           <p className="footer-text">
             © 2026 Alexander Sangurima
           </p>
-          {!isBlog && (
-            <Link to="/blog" className="footer-blog-link">
-              Read the Blog
-            </Link>
-          )}
+          <div className="footer-links">
+            <a href="mailto:contact@mail.alehxs.com" target="_blank" rel="noopener noreferrer" className="footer-link">
+              <img src={envelopeIcon} alt="Email" className="footer-icon" />
+            </a>
+            <a href="https://github.com/alehxs" target="_blank" rel="noopener noreferrer" className="footer-link">
+              <img src={githubIcon} alt="GitHub" className="footer-icon" />
+            </a>
+            <a href="https://linkedin.com/in/asangurima" target="_blank" rel="noopener noreferrer" className="footer-link">
+              <img src={linkedinIcon} alt="LinkedIn" className="footer-icon" />
+            </a>
+          </div>
         </div>
-        <div className="footer-links">
-          <a href="mailto:contact@mail.alehxs.com" target="_blank" rel="noopener noreferrer" className="footer-link">
-            <img src={envelopeIcon} alt="Email" className="footer-icon" />
-          </a>
-          <a href="https://github.com/alehxs" target="_blank" rel="noopener noreferrer" className="footer-link">
-            <img src={githubIcon} alt="GitHub" className="footer-icon" />
-          </a>
-          <a href="https://linkedin.com/in/asangurima" target="_blank" rel="noopener noreferrer" className="footer-link">
-            <img src={linkedinIcon} alt="LinkedIn" className="footer-icon" />
-          </a>
-        </div>
+        {!isBlog && (
+          <Link to="/blog" className="footer-blog-link">
+            Read the Blog
+          </Link>
+        )}
       </div>
     </footer>
   );
