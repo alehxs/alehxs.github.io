@@ -19,8 +19,9 @@ function ProjectPolaroid({ project, rotation }) {
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`GitHub - ${project.title}`}
               >
-                GitHub - {project.title}
+                GitHub
               </a>
             )}
             {project.websiteLink && (
