@@ -36,7 +36,7 @@ function Home() {
       title: 'The BRAIN Center Website',
       description: 'Redesigned an NSF research center\'s website, migrating from legacy Wordpress to a modern Next.js stack',
       githubLink: 'https://github.com/alehxs/brain-web',
-      websiteLink: 'https://brain-web-rho.vercel.app/'
+      websiteLink: 'https://nsfbrain.org/'
     },
     {
       image: '/projects/coogzoo.webp',
