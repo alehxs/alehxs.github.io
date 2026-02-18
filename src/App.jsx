@@ -34,7 +34,7 @@ function Home() {
     {
       image: '/projects/brain-web.webp',
       title: 'The BRAIN Center Website',
-      description: 'Redesigned an NSF research center\'s website, migrating from legacy Wordpress to a modern Next.js stack',
+      description: 'A full website redesign for an NSF neurotechnology research center, migrating from WordPress to a modern Next.js stack and shipped to production',
       githubLink: 'https://github.com/alehxs/brain-web',
       websiteLink: 'https://nsfbrain.org/'
     },
