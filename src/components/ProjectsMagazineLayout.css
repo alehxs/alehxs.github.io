@@ -31,7 +31,7 @@
 }
 
 .polaroid {
-  background: white;
+  background: var(--off-white);
   padding: 15px 15px 60px 15px;
   box-shadow:
     0 4px 12px var(--shadow-warm),
