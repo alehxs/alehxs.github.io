@@ -23,8 +23,15 @@ function Home() {
   const [featuredRef, featuredVisible] = useScrollAnimation();
   const [projectsRef, projectsVisible] = useScrollAnimation();
 
-  // Remaining projects (excluding Telemetrics which is featured)
+  // Remaining projects (excluding BRAIN Center which is featured)
   const remainingProjects = [
+    {
+      image: '/projects/telemetrics.webp',
+      title: 'Telemetrics',
+      description: 'Full-stack Formula 1 dashboard visualizing session telemetry, tyre strategy, and driver performance across seasons',
+      githubLink: 'https://github.com/alehxs/telemetrics',
+      websiteLink: 'https://alehxs.com/telemetrics/',
+    },
     {
       image: '/projects/menui.webp',
       title: 'Menui',
@@ -32,11 +39,10 @@ function Home() {
       githubLink: 'https://github.com/alehxs/menui',
     },
     {
-      image: '/projects/brain-web.webp',
-      title: 'The BRAIN Center Website',
-      description: 'A full website redesign for an NSF neurotechnology research center, migrating from WordPress to a modern Next.js stack and shipped to production',
-      githubLink: 'https://github.com/alehxs/brain-web',
-      websiteLink: 'https://nsfbrain.org/'
+      image: '/projects/trino.webp',
+      title: 'Trino',
+      description: 'A minimalistic iOS habit tracker built with SwiftUI and SwiftData. Pick three daily tasks and build a streak, one day at a time.',
+      githubLink: 'https://github.com/alehxs/trino',
     },
     {
       image: '/projects/coogzoo.webp',
@@ -57,11 +63,11 @@ function Home() {
       description: 'A pygame-powered Wordle replica built with test-driven development and comprehensive unit tests',
       githubLink: 'https://github.com/alehxs/wordle'
     },
-    {
-      image: '/projects/portfolio.webp',
-      title: 'Portfolio Website',
-      description: 'A React-based portfolio with a magazine-inspired layout and smooth scroll animations (you\'re looking at it right now)',
-    },
+    // {
+    //   image: '/projects/portfolio.webp',
+    //   title: 'Portfolio Website',
+    //   description: 'A React-based portfolio with a magazine-inspired layout and smooth scroll animations (you\'re looking at it right now)',
+    // },
   ];
 
   return (

@@ -7,21 +7,21 @@ function FeaturedProjectMagazine() {
 
       <div className="feature-layout">
         <div className="feature-image-wrapper">
-          <img src="/projects/telemetrics.webp" alt="Telemetrics Dashboard" className="feature-image" width="800" height="450" />
+          <img src="/projects/brain-web.webp" alt="The BRAIN Center Website" className="feature-image" width="800" height="450" />
         </div>
 
         <div className="feature-content">
-          <h2 className="feature-headline">TELEMETRICS</h2>
+          <h2 className="feature-headline">THE BRAIN CENTER</h2>
           <div className="feature-deck">
-            Formula 1 Dashboard Visualizing Session Telemetry
+            Full Website Redesign for an NSF Neurotechnology Research Center
           </div>
           <p className="feature-description">
-            Full-stack Formula 1 dashboard visualizing session telemetry,
-            tyre strategy, and driver performance across seasons
+            A full website redesign for an NSF neurotechnology research center,
+            migrating from WordPress to a modern Next.js stack and shipped to production
           </p>
           <div className="feature-buttons">
             <a
-              href="https://github.com/alehxs/telemetrics"
+              href="https://github.com/alehxs/brain-web"
               target="_blank"
               rel="noopener noreferrer"
               className="feature-btn"
@@ -29,12 +29,12 @@ function FeaturedProjectMagazine() {
               <span>VIEW CODE</span>
             </a>
             <a
-              href="https://alehxs.com/telemetrics/"
+              href="https://nsfbrain.org/"
               target="_blank"
               rel="noopener noreferrer"
               className="feature-btn feature-btn--primary"
             >
-              <span>LIVE DEMO</span>
+              <span>LIVE SITE</span>
             </a>
           </div>
         </div>
