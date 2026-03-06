@@ -10,6 +10,7 @@ import ToolsSection from './components/ToolsSection';
 import FeaturedProjectMagazine from './components/FeaturedProjectMagazine';
 import ProjectsMagazineLayout from './components/ProjectsMagazineLayout';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
 import { useScrollAnimation } from './hooks/useScrollAnimation';
 import './App.css';
@@ -74,13 +75,14 @@ function Home() {
     <main>
       <div className="magazine-container">
         {/* HERO SPREAD - Full width dramatic intro */}
-        <section className="magazine-hero-section">
+        <section id="home" className="magazine-hero-section">
           <HeroSection />
           <ContactCard />
         </section>
 
         {/* ABOUT ME SECTION - Personal introduction */}
         <section
+          id="about"
           ref={contactRef}
           className={`magazine-contact-section scroll-animate ${contactVisible ? 'visible' : ''}`}
         >
@@ -89,6 +91,7 @@ function Home() {
 
         {/* SKILLS BREAKDOWN - Separate sections for each category */}
         <section
+          id="skills"
           ref={skillsRef}
           className={`magazine-skills-section scroll-animate ${skillsVisible ? 'visible' : ''}`}
         >
@@ -99,6 +102,7 @@ function Home() {
 
         {/* FEATURED PROJECT - Full bleed layout */}
         <section
+          id="projects"
           ref={featuredRef}
           className={`magazine-projects-section scroll-animate ${featuredVisible ? 'visible' : ''}`}
         >
@@ -126,6 +130,7 @@ function Home() {
 function App() {
   return (
     <Router>
+      <Navbar />
       <Suspense fallback={<div style={{ minHeight: '100vh', backgroundColor: 'var(--bg-primary)' }} />}>
         <Routes>
           <Route path="/" element={<Home />} />
