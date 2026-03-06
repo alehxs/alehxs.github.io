@@ -87,7 +87,6 @@
   line-height: 1.9;
   color: var(--text-primary);
   margin: 0;
-  text-align: justify;
 }
 
 .about-text:first-child {

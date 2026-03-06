@@ -1,149 +1,84 @@
 .hero-magazine {
   position: relative;
+  padding: 50px 40px;
+  background: var(--bg-primary);
+  border-left: 6px solid var(--prussian-blue);
   display: flex;
-  align-items: center;
-  padding: 40px;
-  background: linear-gradient(135deg, var(--cream) 0%, var(--aged-paper) 100%);
-  border: 3px solid var(--deep-brown);
-  box-shadow:
-    8px 8px 0 var(--prussian-blue),
-    8px 8px 0 2px var(--deep-brown);
-  min-height: 400px;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.hero-content {
-  width: 100%;
-  position: relative;
-}
-
-.hero-corner-accent {
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: 60px;
-  height: 60px;
-  border-top: 3px solid var(--prussian-blue);
-  border-left: 3px solid var(--prussian-blue);
+.hero-eyebrow {
+  font-family: var(--font-headline);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wider);
+  color: var(--text-tertiary);
+  margin-bottom: 16px;
 }
 
 .hero-headline {
   font-family: var(--font-headline);
-  font-size: clamp(2.5rem, 9vw, 7rem);
-  letter-spacing: var(--tracking-tight);
-  color: var(--deep-brown);
-  line-height: 0.9;
   margin: 0;
-  text-transform: uppercase;
-  word-break: break-word;
+  line-height: 0.9;
 }
 
-.hero-subline {
-  font-family: var(--font-headline);
-  font-size: clamp(1.5rem, 5vw, 3.5rem);
-  letter-spacing: var(--tracking-wide);
-  color: var(--warm-brown);
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.hero-slash {
+.hero-first {
+  display: block;
+  font-size: clamp(2.2rem, 7vw, 5rem);
   color: var(--prussian-blue);
-  font-size: 1.2em;
+  letter-spacing: var(--tracking-tight);
 }
 
-.hero-badge {
-  position: absolute;
-  right: -20px;
-  top: 50%;
-  transform: translateY(-50%) rotate(90deg);
+.hero-last {
+  display: block;
+  font-size: clamp(3.5rem, 11vw, 8rem);
+  color: var(--deep-brown);
+  letter-spacing: var(--tracking-tight);
+}
+
+.hero-rule {
+  width: 100%;
+  height: 2px;
   background: var(--prussian-blue);
-  color: var(--off-white);
-  padding: 12px 40px;
-  font-family: var(--font-headline);
+  margin: 28px 0;
+}
+
+.hero-tagline {
+  font-family: var(--font-display);
   font-size: var(--text-lg);
-  letter-spacing: var(--tracking-wider);
-  box-shadow: 4px 4px 12px var(--shadow-deep);
-  white-space: nowrap;
-  z-index: 10;
-}
-
-.hero-stripe {
-  position: absolute;
-  bottom: -10px;
-  left: 20%;
-  width: 60%;
-  height: 6px;
-  background: var(--prussian-blue);
-  transform: skewX(-20deg);
+  color: var(--text-secondary);
+  font-style: italic;
 }
 
 /* Responsive */
 @media only screen and (max-width: 768px) {
   .hero-magazine {
-    padding: 30px 20px;
-    min-height: auto;
-    box-shadow:
-      6px 6px 0 var(--prussian-blue),
-      6px 6px 0 2px var(--deep-brown);
+    padding: 40px 24px;
   }
 
-  .hero-headline {
-    font-size: clamp(2.5rem, 12vw, 4rem);
+  .hero-first {
+    font-size: clamp(2rem, 10vw, 3rem);
   }
 
-  .hero-badge {
-    position: static;
-    transform: none;
-    margin-top: 24px;
-    display: inline-block;
-    padding: 8px 16px;
-    font-size: var(--text-sm);
-    width: auto;
+  .hero-last {
+    font-size: clamp(3rem, 14vw, 5rem);
   }
 
-  .hero-corner-accent {
-    width: 30px;
-    height: 30px;
-    top: -15px;
-    left: -15px;
-    border-width: 3px;
+  .hero-rule {
+    margin: 20px 0;
   }
 
-  .hero-stripe {
-    height: 4px;
-    bottom: -6px;
-  }
-
-  .hero-subline {
-    gap: 8px;
+  .hero-tagline {
+    font-size: var(--text-base);
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
-  .hero-magazine {
-    min-height: 350px;
-    padding: 40px 30px;
+  .hero-first {
+    font-size: clamp(2.2rem, 6vw, 4rem);
   }
 
-  .hero-headline {
-    font-size: clamp(3rem, 8vw, 5rem);
-  }
-
-  .hero-subline {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-  }
-
-  .hero-badge {
-    padding: 8px 24px;
-    font-size: var(--text-base);
-    right: -30px;
-  }
-
-  .hero-corner-accent {
-    width: 45px;
-    height: 45px;
+  .hero-last {
+    font-size: clamp(3rem, 9vw, 6rem);
   }
 }

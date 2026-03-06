@@ -16,8 +16,9 @@ function FeaturedProjectMagazine() {
             Full Website Redesign for an NSF Neurotechnology Research Center
           </div>
           <p className="feature-description">
-            A full website redesign for an NSF neurotechnology research center,
-            migrating from WordPress to a modern Next.js stack and shipped to production
+            Migrated from a legacy WordPress site to Next.js 14 with a custom design system,
+            cutting load times by over 60% and shipping a fully accessible, production-ready
+            site for an active NSF-funded research lab.
           </p>
           <div className="feature-buttons">
             <a
