@@ -3,22 +3,13 @@ import './HeroSection.css';
 function HeroSection() {
   return (
     <div className="hero-magazine">
-      <div className="hero-content">
-        <div className="hero-corner-accent"></div>
-
-        <h1 className="hero-headline">ALEXANDER</h1>
-
-        <div className="hero-subline">
-          <span className="hero-slash">{"/"}/</span>
-          <span>SANGURIMA</span>
-        </div>
-
-        <div className="hero-badge">
-          <span>SOFTWARE ENGINEER</span>
-        </div>
-
-        <div className="hero-stripe"></div>
-      </div>
+      <div className="hero-eyebrow">SOFTWARE ENGINEER</div>
+      <h1 className="hero-headline">
+        <span className="hero-first">ALEXANDER</span>
+        <span className="hero-last">SANGURIMA</span>
+      </h1>
+      <div className="hero-rule"></div>
+      <p className="hero-tagline">"No wind favors he who has no destined port."</p>
     </div>
   );
 }
