@@ -1,13 +1,18 @@
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
+  const { pathname } = useLocation();
+  const isHome = pathname === '/';
+
   return (
     <nav className="navbar">
-      <a href="#home" className="navbar-logo">A.S.</a>
+      <Link to="/" className="navbar-logo">A.S.</Link>
       <div className="navbar-links">
-        <a href="#about" className="navbar-link">About</a>
-        <a href="#skills" className="navbar-link">Skills</a>
-        <a href="#projects" className="navbar-link">Projects</a>
+        <a href={isHome ? '#about' : '/#about'} className="navbar-link">About</a>
+        <a href={isHome ? '#skills' : '/#skills'} className="navbar-link">Skills</a>
+        <a href={isHome ? '#projects' : '/#projects'} className="navbar-link">Projects</a>
+        <Link to="/asombro" className="navbar-link">奇</Link>
       </div>
     </nav>
   );
