@@ -17,6 +17,7 @@ import './App.css';
 
 const BlogPage = lazy(() => import('./pages/BlogPage'));
 const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
+const AsombroPage = lazy(() => import('./pages/AsombroPage'));
 
 function Home() {
   const [contactRef, contactVisible] = useScrollAnimation();
@@ -136,6 +137,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPostPage />} />
+          <Route path="/asombro" element={<AsombroPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
