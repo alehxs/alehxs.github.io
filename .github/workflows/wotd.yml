@@ -1,0 +1,45 @@
+name: Word of the Day
+
+on:
+  schedule:
+    - cron: '0 7 * * *'   # 7am UTC daily
+  workflow_dispatch:        # allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-wotd:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Scrape word of the day
+        run: python scripts/wotd.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/wotd.json
+          git diff --cached --quiet || git commit -m "chore(wotd): update word of the day"
+          git push
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install and deploy
+        run: |
+          npm ci
+          npm run build
+          npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
