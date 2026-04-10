@@ -46,9 +46,9 @@ export default function AsombroPage() {
   }, []);
 
   useEffect(() => {
-    fetch('https://api.quotable.io/random?tags=philosophy|science&maxLength=200')
+    fetch('https://dummyjson.com/quotes/random')
       .then((r) => r.json())
-      .then((d) => { setQuote(d); setQuoteLoading(false); })
+      .then((d) => { setQuote({ content: d.quote, author: d.author }); setQuoteLoading(false); })
       .catch(() => { setQuoteLoading(false); setQuoteError(true); });
   }, []);
 
