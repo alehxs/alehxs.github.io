@@ -5,15 +5,15 @@
   width: 56px;
   height: 56px;
   background: var(--prussian-blue);
-  border: 3px solid var(--deep-brown);
+  border: 3px solid var(--text-primary);
   border-radius: 0;
-  color: var(--off-white);
+  color: var(--bg-elevated);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10000;
-  box-shadow: 4px 4px 0 var(--deep-brown);
+  box-shadow: 4px 4px 0 var(--text-primary);
   opacity: 0;
   transform: translateY(20px);
   pointer-events: none;
@@ -28,7 +28,7 @@
 
 .scroll-to-top--visible:hover {
   transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 var(--deep-brown);
+  box-shadow: 2px 2px 0 var(--text-primary);
 }
 
 .scroll-to-top--visible:active {
