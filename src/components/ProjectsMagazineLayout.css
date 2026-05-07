@@ -31,9 +31,9 @@
 }
 
 .polaroid {
-  background: var(--off-white);
+  background: var(--bg-elevated);
   padding: 15px 15px 60px 15px;
-  box-shadow: 4px 4px 0 var(--medium-brown);
+  box-shadow: 4px 4px 0 var(--text-tertiary);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
   transform-origin: center;
 }
@@ -60,7 +60,7 @@
 .polaroid-caption h3 {
   font-family: var(--font-headline);
   font-size: var(--text-xl);
-  color: var(--deep-brown);
+  color: var(--text-primary);
   margin-bottom: 8px;
   letter-spacing: var(--tracking-normal);
 }

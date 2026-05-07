@@ -32,7 +32,7 @@
 .hero-last {
   display: block;
   font-size: clamp(3.5rem, 11vw, 8rem);
-  color: var(--deep-brown);
+  color: var(--text-primary);
   letter-spacing: var(--tracking-tight);
 }
 

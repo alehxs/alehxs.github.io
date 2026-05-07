@@ -36,7 +36,7 @@
 .asombro-divider {
   font-family: var(--font-body);
   font-size: 1.5rem;
-  color: var(--sepia);
+  color: var(--masthead-gray);
   font-weight: 300;
 }
 
@@ -103,7 +103,7 @@
 .section-empty {
   font-family: var(--font-body);
   font-style: italic;
-  color: var(--sepia);
+  color: var(--masthead-gray);
 }
 
 /* ── Word of the Day ──────────────────────────────────────────────────────── */
@@ -151,7 +151,7 @@
   font-size: clamp(1.1rem, 1.6vw, 1.4rem);
   font-style: italic;
   line-height: 1.65;
-  color: var(--off-white);
+  color: var(--bg-elevated);
   margin: 0 0 24px;
   position: relative;
   z-index: 1;
@@ -211,9 +211,9 @@
 .sk {
   background: linear-gradient(
     90deg,
-    var(--aged-paper) 25%,
-    var(--tan) 50%,
-    var(--aged-paper) 75%
+    var(--bg-secondary) 25%,
+    var(--galley) 50%,
+    var(--bg-secondary) 75%
   );
   background-size: 200% 100%;
   animation: shimmer 1.4s infinite;

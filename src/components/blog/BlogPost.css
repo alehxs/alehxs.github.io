@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 80px 60px;
   min-height: 100vh;
-  background: var(--off-white);
+  background: var(--bg-elevated);
 }
 
 .blog-back-link {
@@ -21,7 +21,7 @@
 
 .blog-back-link:hover {
   background: var(--prussian-blue);
-  color: var(--off-white);
+  color: var(--bg-elevated);
   transform: translateX(-4px);
 }
 
@@ -45,7 +45,7 @@
   font-family: var(--font-headline);
   font-size: var(--text-4xl);
   letter-spacing: var(--tracking-tight);
-  color: var(--deep-brown);
+  color: var(--text-primary);
   margin-bottom: 20px;
   line-height: var(--leading-tight);
 }
@@ -61,7 +61,7 @@
 .blog-post-tag {
   font-family: var(--font-body);
   font-size: var(--text-sm);
-  color: var(--off-white);
+  color: var(--bg-elevated);
   background: var(--prussian-blue);
   padding: 6px 14px;
   border-radius: 2px;
@@ -77,8 +77,8 @@
 
 .blog-post-cover {
   margin-bottom: 50px;
-  border: 4px solid var(--deep-brown);
-  box-shadow: 8px 8px 0 var(--tan);
+  border: 4px solid var(--text-primary);
+  box-shadow: 8px 8px 0 var(--galley);
   overflow: hidden;
 }
 
@@ -99,7 +99,7 @@
 .markdown-h1 {
   font-family: var(--font-headline);
   font-size: var(--text-3xl);
-  color: var(--deep-brown);
+  color: var(--text-primary);
   margin: 50px 0 25px 0;
   letter-spacing: var(--tracking-normal);
   border-bottom: 3px solid var(--prussian-blue);
@@ -109,7 +109,7 @@
 .markdown-h2 {
   font-family: var(--font-headline);
   font-size: var(--text-2xl);
-  color: var(--deep-brown);
+  color: var(--text-primary);
   margin: 40px 0 20px 0;
   letter-spacing: var(--tracking-normal);
   position: relative;
@@ -126,7 +126,7 @@
 .markdown-h3 {
   font-family: var(--font-headline);
   font-size: var(--text-xl);
-  color: var(--warm-brown);
+  color: var(--text-secondary);
   margin: 30px 0 15px 0;
   letter-spacing: var(--tracking-normal);
 }
@@ -144,15 +144,15 @@
 
 .markdown-link:hover {
   background: var(--prussian-blue);
-  color: var(--off-white);
+  color: var(--bg-elevated);
   padding: 2px 4px;
 }
 
 .markdown-image-wrapper {
   display: block;
   margin: 40px 0;
-  border: 3px solid var(--deep-brown);
-  box-shadow: 6px 6px 0 var(--tan);
+  border: 3px solid var(--text-primary);
+  box-shadow: 6px 6px 0 var(--galley);
   overflow: hidden;
 }
 
@@ -165,22 +165,22 @@
 .markdown-code-inline {
   font-family: 'Courier New', monospace;
   font-size: 0.9em;
-  background: var(--aged-paper);
+  background: var(--bg-secondary);
   color: var(--prussian-blue);
   padding: 2px 6px;
   border-radius: 2px;
-  border: 1px solid var(--tan);
+  border: 1px solid var(--galley);
 }
 
 .markdown-code-block {
   display: block;
   font-family: 'Courier New', monospace;
   font-size: 0.9em;
-  background: var(--aged-paper);
-  color: var(--deep-brown);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
   padding: 20px;
   margin: 30px 0;
-  border: 3px solid var(--deep-brown);
+  border: 3px solid var(--text-primary);
   border-left: 6px solid var(--prussian-blue);
   overflow-x: auto;
   line-height: 1.6;
@@ -189,7 +189,7 @@
 
 .markdown-blockquote {
   border-left: 6px solid var(--prussian-blue);
-  background: var(--aged-paper);
+  background: var(--bg-secondary);
   padding: 20px 30px;
   margin: 30px 0;
   font-style: italic;
