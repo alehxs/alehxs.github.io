@@ -97,7 +97,7 @@
 .skills-category h3 {
   font-size: 25px;
   margin-bottom: 20px;
-  color: var(--primary-color);
+  color: var(--accent-primary);
   font-weight: 500;
   transition: color 0.2s ease;
 }

@@ -1,38 +1,41 @@
 :root {
-  /* Vintage Magazine Color Palette - Warm/Cool Contrast */
+  /* Vintage Broadsheet Color Palette */
 
-  /* Cool Accents */
-  --prussian-blue: #2C4B5E; /* Prussian Blue */
-  --deep-teal: #3D6E70;     /* Deep Teal */
+  /* Locked Accent */
+  --prussian-blue: #0F2D5C;     /* Houston Navy — primary accent, LOCKED */
 
-  /* Warm Backgrounds */
-  --tan: #D4B896;           /* Warm Tan */
-  --cream: #EDE0C4;         /* Warm Cream */
-  --off-white: #F8F1E1;     /* Off White */
-  --aged-paper: #DDD0B2;    /* Aged Paper */
+  /* Secondary Accent */
+  --copper-red:    #8B3A2A;     /* Editorial iron-gall red */
 
-  /* Cool Neutrals (Text & Structure) */
-  --deep-brown: #2C3539;    /* Cool Charcoal */
-  --warm-brown: #556368;    /* Slate Gray */
-  --medium-brown: #6B7278;  /* Medium Slate */
-  --sepia: #8A9096;         /* Silver Gray */
+  /* Paper Backgrounds — warm newsprint scale */
+  --newsprint:     #F2E8D5;     /* Fresh newsprint — elevated surfaces */
+  --broadsheet:    #E8D9BC;     /* One-day-old broadsheet — primary bg */
+  --lead-type:     #D4C5A3;     /* Aged paper — secondary bg */
+  --galley:        #C4B48E;     /* Galley proof tone — borders, rules */
+
+  /* Ink Text Scale — warm charcoal */
+  --ink-black:     #1A1410;     /* Dried ink on cotton rag — body text */
+  --press-gray:    #3D3530;     /* Compositor's graphite — secondary text */
+  --composite-gray:#5C5550;     /* Typesetting dust — tertiary text */
+  --masthead-gray: #7A7068;     /* Faded rule — decorative/muted only */
 
   /* Shadows */
-  --shadow-warm: rgba(44, 53, 57, 0.12);
-  --shadow-deep: rgba(44, 53, 57, 0.18);
+  --shadow-warm: rgba(26, 20, 16, 0.10);
+  --shadow-deep: rgba(26, 20, 16, 0.18);
 
-  /* Applied colors */
-  --bg-primary: var(--cream);
-  --bg-secondary: var(--aged-paper);
-  --bg-elevated: var(--off-white);
-  --bg-hero: var(--off-white);
-  --text-primary: var(--deep-brown);
-  --text-secondary: var(--warm-brown);
-  --text-tertiary: var(--medium-brown);
-  --accent-primary: var(--prussian-blue);
-  --accent-secondary: var(--deep-teal);
-  --shadow-soft: var(--shadow-warm);
-  --shadow-medium: var(--shadow-deep);
+  /* Applied tokens */
+  --bg-primary:       var(--broadsheet);
+  --bg-secondary:     var(--lead-type);
+  --bg-elevated:      var(--newsprint);
+  --bg-hero:          var(--newsprint);
+  --text-primary:     var(--ink-black);
+  --text-secondary:   var(--press-gray);
+  --text-tertiary:    var(--composite-gray);
+  --accent-primary:   var(--prussian-blue);
+  --accent-secondary: var(--copper-red);
+  --shadow-soft:      var(--shadow-warm);
+  --shadow-medium:    var(--shadow-deep);
+
 
   /* Font Families */
   --font-display: 'EB Garamond', serif;
