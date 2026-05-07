@@ -81,7 +81,7 @@
 
 .feature-btn--primary {
   background: var(--accent-primary);
-  color: var(--off-white);
+  color: var(--bg-elevated);
   border-color: var(--accent-primary);
 }
 
