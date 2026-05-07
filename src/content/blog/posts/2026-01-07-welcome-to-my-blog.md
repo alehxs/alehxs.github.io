@@ -1,5 +1,5 @@
 ---
-title: "Welcome to My Blog!"
+title: "Welcome to My Blog"
 date: "2026-01-07"
 excerpt: "The first post on my new blog. I'll be sharing stories, learnings, and other bits and pieces of my life."
 tags: ["personal"]

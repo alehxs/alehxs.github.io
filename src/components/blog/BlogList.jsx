@@ -16,9 +16,12 @@ function BlogList({ posts }) {
 
   return (
     <div className="blog-list-container">
-      <Link to="/" className="blog-back-link">← Portfolio</Link>
-      <div className="blog-header">
-        <h1 className="blog-headline">STORIES & LEARNINGS</h1>
+      <div className="blog-top-row">
+        <div className="blog-headline-row">
+          <Link to="/" className="blog-back-link">←</Link>
+          <h1 className="blog-headline">STORIES & LEARNINGS</h1>
+          <span className="blog-top-spacer" aria-hidden="true">←</span>
+        </div>
         <p className="blog-subheadline">
           Thoughts on life, lessons, and everything in between.
         </p>

@@ -1,37 +1,55 @@
 .blog-list-container {
   min-height: 100vh;
-  padding: 60px 80px;
+  padding: 72px 80px 60px;
   max-width: 1600px;
   margin: 0 auto;
 }
 
-.blog-list-container > .blog-back-link {
-  display: inline-block;
-  font-family: var(--font-headline);
-  font-size: var(--text-sm);
-  letter-spacing: var(--tracking-wide);
-  color: var(--prussian-blue);
-  text-decoration: none;
-  margin-bottom: 40px;
-  padding: 8px 16px;
-  border: 2px solid var(--prussian-blue);
-  transition: all 0.2s ease;
-}
-
-.blog-list-container > .blog-back-link:hover {
-  background: var(--prussian-blue);
-  color: var(--bg-elevated);
-  transform: translateX(-4px);
-}
-
-.blog-header {
-  text-align: center;
+.blog-top-row {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 60px;
   padding-bottom: 40px;
   border-bottom: 4px solid var(--prussian-blue);
 }
 
+.blog-headline-row {
+  display: flex;
+  align-items: center;
+}
+
+.blog-back-link {
+  flex: 0 0 auto;
+  font-family: var(--font-headline);
+  font-size: var(--text-lg);
+  color: var(--prussian-blue);
+  text-decoration: none;
+  padding: 8px 14px;
+  border: 2px solid var(--prussian-blue);
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.blog-top-spacer {
+  flex: 0 0 auto;
+  visibility: hidden;
+  padding: 8px 14px;
+  border: 2px solid transparent;
+  font-family: var(--font-headline);
+  font-size: var(--text-lg);
+  line-height: 1;
+  content: '←';
+}
+
+.blog-back-link:hover {
+  background: var(--prussian-blue);
+  color: var(--bg-elevated);
+  transform: translateX(-4px);
+}
+
 .blog-headline {
+  flex: 1;
+  text-align: center;
   font-family: var(--font-headline);
   font-size: var(--text-5xl);
   letter-spacing: var(--tracking-wide);
@@ -44,6 +62,8 @@
   font-size: var(--text-lg);
   color: var(--text-secondary);
   font-style: italic;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .blog-filter-section {
@@ -103,7 +123,12 @@
 /* Responsive */
 @media only screen and (max-width: 768px) {
   .blog-list-container {
-    padding: 40px 24px;
+    padding: 16px 24px 40px;
+  }
+
+  .blog-top-row {
+    margin-bottom: 40px;
+    padding-bottom: 24px;
   }
 
   .blog-headline {
@@ -127,7 +152,7 @@
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .blog-list-container {
-    padding: 50px 40px;
+    padding: 20px 40px 50px;
   }
 
   .blog-grid {
