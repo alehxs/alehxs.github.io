@@ -21,7 +21,7 @@
 .skill-block--right {
   margin-left: 20%;
   margin-bottom: 50px;
-  border-left: 5px solid var(--accent-secondary);
+  border-left: 5px solid var(--accent-primary);
 }
 
 .skill-header-group {

@@ -1,7 +1,7 @@
 .contact-stamp {
   width: 100%;
   padding: 40px;
-  background: var(--aged-paper);
+  background: var(--bg-secondary);
   border-left: 6px solid var(--prussian-blue);
   position: relative;
   display: flex;
@@ -57,7 +57,7 @@
 
 .stamp-link:hover .stamp-icon {
   transform: scale(1.1);
-  filter: brightness(0) saturate(100%) invert(25%) sepia(35%) saturate(800%) hue-rotate(170deg) brightness(95%) contrast(90%);
+  filter: brightness(0) saturate(100%) invert(14%) sepia(80%) saturate(600%) hue-rotate(195deg) brightness(85%) contrast(110%);
 }
 
 .stamp-label {

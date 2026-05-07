@@ -8,15 +8,19 @@
   padding: 0 80px;
   height: 52px;
   background: var(--bg-primary);
-  border-bottom: 2px solid var(--text-primary);
+  border-bottom: 2px solid var(--accent-primary);
 }
 
 .navbar-logo {
-  font-family: var(--font-headline);
-  font-size: var(--text-xl);
-  letter-spacing: var(--tracking-wider);
-  color: var(--text-primary);
+  display: flex;
+  align-items: center;
   text-decoration: none;
+}
+
+.navbar-logo-img {
+  height: 34px;
+  width: 34px;
+  border-radius: 6px;
 }
 
 .navbar-links {
@@ -36,7 +40,7 @@
 }
 
 .navbar-link:hover {
-  color: var(--text-primary);
+  color: var(--accent-primary);
 }
 
 @media only screen and (max-width: 768px) {

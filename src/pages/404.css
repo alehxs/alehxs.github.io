@@ -16,7 +16,7 @@
   justify-content: center;
   min-height: 100vh;
   padding: 40px 20px;
-  background: linear-gradient(180deg, var(--off-white) 0%, var(--cream) 100%);
+  background: linear-gradient(180deg, var(--bg-elevated) 0%, var(--bg-primary) 100%);
   position: relative;
 }
 
@@ -25,11 +25,11 @@
   max-width: 600px;
   width: 100%;
   padding: 60px 50px;
-  background: linear-gradient(135deg, var(--off-white) 0%, var(--cream) 100%);
-  border: 3px solid var(--deep-brown);
+  background: linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg-primary) 100%);
+  border: 3px solid var(--text-primary);
   box-shadow:
     8px 8px 0 var(--prussian-blue),
-    8px 8px 0 2px var(--deep-brown);
+    8px 8px 0 2px var(--text-primary);
   text-align: center;
 }
 
@@ -61,7 +61,7 @@
   font-family: var(--font-headline);
   font-size: clamp(8rem, 20vw, 14rem);
   letter-spacing: var(--tracking-tight);
-  color: var(--deep-brown);
+  color: var(--text-primary);
   line-height: 0.85;
   margin: 0;
   text-transform: uppercase;
@@ -71,7 +71,7 @@
   font-family: var(--font-headline);
   font-size: var(--text-lg);
   letter-spacing: var(--tracking-wider);
-  color: var(--warm-brown);
+  color: var(--text-secondary);
   margin: 10px 0 0 0;
   text-transform: uppercase;
 }
@@ -87,7 +87,7 @@
 .not-found-message {
   font-family: var(--font-body);
   font-size: var(--text-lg);
-  color: var(--warm-brown);
+  color: var(--text-secondary);
   line-height: 1.6;
   margin: 0 0 30px 0;
   max-width: 400px;
@@ -102,18 +102,18 @@
   font-family: var(--font-headline);
   font-size: var(--text-base);
   letter-spacing: var(--tracking-wide);
-  color: var(--off-white);
+  color: var(--bg-elevated);
   background: var(--prussian-blue);
   padding: 14px 32px;
   text-decoration: none;
-  border: 2px solid var(--deep-brown);
-  box-shadow: 4px 4px 0 var(--deep-brown);
+  border: 2px solid var(--text-primary);
+  box-shadow: 4px 4px 0 var(--text-primary);
   transition: all 0.2s ease;
 }
 
 .not-found-link:hover {
   transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 var(--deep-brown);
+  box-shadow: 2px 2px 0 var(--text-primary);
 }
 
 .not-found-link-arrow {
@@ -139,7 +139,7 @@
   display: inline-block;
   margin-bottom: 20px;
   background: var(--prussian-blue);
-  color: var(--off-white);
+  color: var(--bg-elevated);
   padding: 8px 20px;
   font-family: var(--font-headline);
   font-size: var(--text-base);
@@ -186,7 +186,7 @@
     padding: 40px 25px;
     box-shadow:
       6px 6px 0 var(--prussian-blue),
-      6px 6px 0 2px var(--deep-brown);
+      6px 6px 0 2px var(--text-primary);
   }
 
   .not-found-corner-accent,

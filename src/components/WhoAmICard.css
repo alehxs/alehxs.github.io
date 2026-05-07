@@ -1,7 +1,7 @@
 .about-card {
   position: relative;
   padding: 40px;
-  background: var(--aged-paper);
+  background: var(--bg-secondary);
   border-left: 6px solid var(--prussian-blue);
   min-height: 300px;
   display: flex;
@@ -14,7 +14,7 @@
   margin: 0 auto;
   padding: 50px;
   border-left: 6px solid var(--prussian-blue);
-  background: var(--aged-paper);
+  background: var(--bg-secondary);
 }
 
 .about-header {
@@ -47,7 +47,7 @@
   flex-direction: column;
   gap: 8px;
   padding-bottom: 16px;
-  border-bottom: 1px solid var(--medium-brown);
+  border-bottom: 1px solid var(--text-tertiary);
 }
 
 .stat-item:last-child {
