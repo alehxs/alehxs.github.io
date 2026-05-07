@@ -198,7 +198,7 @@ Subtle texture makes vintage design feel **tangible**. You can add paper grain u
 
 \`\`\`css
 body {
-  background: var(--cream);
+  background: var(--bg-primary);
   background-image: url('data:image/svg+xml;base64,...');
   background-blend-mode: multiply;
 }
