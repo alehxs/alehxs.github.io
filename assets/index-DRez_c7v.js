@@ -264,7 +264,7 @@ Don't be afraid to experiment. Mix in modern techniques (smooth animations, resp
 
 *What's your take on vintage web design? Let me know!*
 `,__vite_glob_0_2=`---
-title: "Welcome to My Blog!"
+title: "Welcome to My Blog"
 date: "2026-01-07"
 excerpt: "The first post on my new blog. I'll be sharing stories, learnings, and other bits and pieces of my life."
 tags: ["personal"]
