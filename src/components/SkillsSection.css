@@ -13,14 +13,12 @@
 
 .skill-block--center {
   margin: 0 10%;
-  margin-bottom: 50px;
   border-top: 3px solid var(--text-primary);
   border-bottom: 3px solid var(--text-primary);
 }
 
 .skill-block--right {
   margin-left: 20%;
-  margin-bottom: 50px;
   border-left: 5px solid var(--accent-primary);
 }
 
@@ -47,20 +45,36 @@
 .skill-icons-row {
   display: flex;
   gap: 40px;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
+}
+
+.skill-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .skill-icon {
   width: 80px;
   height: 80px;
   filter: sepia(0.2) contrast(1.1);
-  transition: all 0.3s ease;
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-.skill-icon:hover {
+.skill-icon-item:hover .skill-icon {
   filter: sepia(0) contrast(1.2);
   transform: translateY(-4px) scale(1.1);
+}
+
+.skill-icon-label {
+  font-family: var(--font-headline);
+  font-size: 0.75rem;
+  letter-spacing: var(--tracking-wide);
+  color: var(--text-secondary);
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Responsive */
