@@ -21,7 +21,7 @@ function ContactCard() {
 function StampLink({ href, icon, label }) {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer" className="stamp-link">
-      <img src={icon} alt="" className="stamp-icon" />
+      <img src={icon} alt="" className="stamp-icon" width="28" height="28" />
       <span className="stamp-label">{label}</span>
     </a>
   );

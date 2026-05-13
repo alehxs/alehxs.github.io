@@ -7,7 +7,7 @@ function ProjectPolaroid({ project, rotation }) {
       style={{ transform: `rotate(${rotation}deg)` }}
     >
       <div className="polaroid-image">
-        <img src={project.image} alt={project.title} width="800" height="450" loading="lazy" />
+        <img src={project.image} alt={project.title} width="800" height="450" loading="lazy" decoding="async" />
       </div>
       <div className="polaroid-caption">
         <h3>{project.title}</h3>

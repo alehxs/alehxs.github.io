@@ -19,7 +19,6 @@ const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
 const AsombroPage = lazy(() => import('./pages/AsombroPage'));
 
 function Home() {
-  const [contactRef, contactVisible] = useScrollAnimation();
   const [skillsRef, skillsVisible] = useScrollAnimation();
   const [featuredRef, featuredVisible] = useScrollAnimation();
   const [projectsRef, projectsVisible] = useScrollAnimation();
@@ -83,8 +82,7 @@ function Home() {
         {/* ABOUT ME SECTION - Personal introduction */}
         <section
           id="about"
-          ref={contactRef}
-          className={`magazine-contact-section scroll-animate ${contactVisible ? 'visible' : ''}`}
+          className="magazine-contact-section"
         >
           <WhoAmICard />
         </section>

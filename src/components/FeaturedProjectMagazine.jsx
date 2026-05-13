@@ -7,7 +7,7 @@ function FeaturedProjectMagazine() {
 
       <div className="feature-layout">
         <div className="feature-image-wrapper">
-          <img src="/projects/brain-web.webp" alt="The BRAIN Center Website" className="feature-image" width="800" height="450" />
+          <img src="/projects/brain-web.webp" alt="The BRAIN Center Website" className="feature-image" width="800" height="450" decoding="async" />
         </div>
 
         <div className="feature-content">
