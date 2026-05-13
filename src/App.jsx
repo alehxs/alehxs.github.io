@@ -4,9 +4,8 @@ import NotFound from './pages/404';
 import HeroSection from './components/HeroSection';
 import WhoAmICard from './components/WhoAmICard';
 import ContactCard from './components/ContactCard';
-import LanguagesSection from './components/LanguagesSection';
-import FrameworksSection from './components/FrameworksSection';
-import ToolsSection from './components/ToolsSection';
+import SkillCategory from './components/SkillCategory';
+import { skillCategories } from './components/skillsData';
 import FeaturedProjectMagazine from './components/FeaturedProjectMagazine';
 import ProjectsMagazineLayout from './components/ProjectsMagazineLayout';
 import Footer from './components/Footer';
@@ -96,9 +95,9 @@ function Home() {
           ref={skillsRef}
           className={`magazine-skills-section scroll-animate ${skillsVisible ? 'visible' : ''}`}
         >
-          <LanguagesSection />
-          <FrameworksSection />
-          <ToolsSection />
+          {skillCategories.map((category) => (
+            <SkillCategory key={category.heading} {...category} />
+          ))}
         </section>
 
         {/* FEATURED PROJECT - Full bleed layout */}
