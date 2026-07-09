@@ -95,9 +95,26 @@ export default function AsombroPage() {
           {wordError   && <p className="section-empty">Could not load today's word.</p>}
           {word && (
             <>
-              <h2 className="word-headline">{word.word}</h2>
+              <h2 className="word-headline">
+                <a
+                  className="word-headline-link"
+                  href={`https://www.wordnik.com/words/${encodeURIComponent(word.word)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {word.word}
+                </a>
+              </h2>
               {word.pos        && <p className="word-pos">{word.pos}</p>}
               {word.definition && <p className="word-definition">{word.definition}</p>}
+              <a
+                className="wordnik-attribution"
+                href="https://www.wordnik.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Powered by Wordnik
+              </a>
             </>
           )}
         </section>

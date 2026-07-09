@@ -1,47 +1,41 @@
 #!/usr/bin/env python3
 """
-Scrapes the OED (oed.com) word of the day from the homepage
-and writes it to public/wotd.json
+Fetches the Wordnik word of the day and writes it to public/wotd.json.
+Requires WORDNIK_API_KEY environment variable.
 """
 
 import json
+import os
 import sys
 from pathlib import Path
 
 import requests
-from bs4 import BeautifulSoup
 
-URL = "https://www.oed.com"
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/120.0.0.0 Safari/537.36"
-    )
-}
+API_URL = "https://api.wordnik.com/v4/words.json/wordOfTheDay"
 
-def scrape():
-    resp = requests.get(URL, headers=HEADERS, timeout=10)
-    resp.raise_for_status()
-    soup = BeautifulSoup(resp.text, "html.parser")
 
-    wotd = soup.select_one(".wotd")
-    if not wotd:
-        print("ERROR: .wotd section not found.")
+def fetch():
+    api_key = os.environ.get("WORDNIK_API_KEY")
+    if not api_key:
+        print("ERROR: WORDNIK_API_KEY not set.")
         sys.exit(1)
 
-    word = wotd.select_one("h3 a") or wotd.select_one("h3")
-    pos  = wotd.select_one(".wotdPos")
-    defn = wotd.select_one(".wotdDef")
+    resp = requests.get(API_URL, params={"api_key": api_key}, timeout=10)
+    resp.raise_for_status()
+    payload = resp.json()
 
-    if not word or not defn:
-        print("ERROR: Could not parse word or definition.")
+    word = payload.get("word", "")
+    definitions = payload.get("definitions") or []
+    first = definitions[0] if definitions else {}
+
+    if not word or not first.get("text"):
+        print("ERROR: Missing word or definition in API response.")
         sys.exit(1)
 
     data = {
-        "word":       word.get_text(strip=True),
-        "pos":        pos.get_text(strip=True) if pos else "",
-        "definition": defn.get_text(strip=True),
+        "word":       word,
+        "pos":        first.get("partOfSpeech", ""),
+        "definition": first["text"],
     }
 
     out = Path(__file__).parent.parent / "public" / "wotd.json"
@@ -49,5 +43,6 @@ def scrape():
     out.write_text(json.dumps(data, ensure_ascii=False, indent=2))
     print(f"Written: {data['word']}")
 
+
 if __name__ == "__main__":
-    scrape()
+    fetch()

@@ -19,10 +19,12 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: pip install requests
 
-      - name: Scrape word of the day
+      - name: Fetch word of the day
         run: python scripts/wotd.py
+        env:
+          WORDNIK_API_KEY: ${{ secrets.WORDNIK_API_KEY }}
 
       - name: Commit if changed
         run: |
