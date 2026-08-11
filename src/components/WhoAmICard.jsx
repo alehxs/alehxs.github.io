@@ -12,25 +12,25 @@ function WhoAmICard() {
             <span className="stat-value">Houston, TX</span>
           </div>
           <div className="stat-item">
-            <span className="stat-label">DEGREE</span>
-            <span className="stat-value">B.S. Computer Science @ University of Houston</span>
+            <span className="stat-label">ROLE</span>
+            <span className="stat-value">AI-Native SWE, TDP @ Accenture</span>
           </div>
           <div className="stat-item">
-            <span className="stat-label">FOCUS</span>
-            <span className="stat-value">Full-Stack, iOS, & Cybersecurity</span>
+            <span className="stat-label">DEGREE</span>
+            <span className="stat-value">B.S. Computer Science @ UH</span>
           </div>
         </div>
 
         {/* Right Column: Narrative Bio */}
         <div className="about-narrative">
           <p className="about-text">
-            I am a recent Computer Science graduate from the University of Houston building scalable full-stack and iOS applications, with an additional interest in cybersecurity.
+            I’m a Computer Science graduate from UH, joining Accenture’s TDP as an AI-Native Software Engineer. My background is in scalable full-stack and iOS development.
           </p>
           <p className="about-text">
-            My technical background demonstrates a wide range of experience, from developing software for UH Labs and securing a Hackathon victory to hosting workshops as a student organization officer.
+            My technical background spans developing software for UH Labs, securing a Hackathon victory, and hosting workshops as a student organization officer.
           </p>
           <p className="about-text">
-            Outside of development, I strive for a polymathic lifestyle. I balance the gym and my passion for Formula One with the challenge of learning Mandarin Chinese, reading, and playing the piano.
+            Outside of development, I strive for a polymathic lifestyle. I balance working out with the challenge of learning Russian and Mandarin, while keeping piano and reading on the sidelines.
           </p>
         </div>
       </div>
