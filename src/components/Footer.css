@@ -26,6 +26,12 @@
   margin: 0;
 }
 
+.footer-bottom-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .footer-blog-link {
   font-family: var(--font-headline);
   font-size: var(--text-sm);
@@ -35,12 +41,25 @@
   text-transform: uppercase;
   border-bottom: 2px solid var(--prussian-blue);
   transition: all 0.2s ease;
-  align-self: flex-start;
 }
 
 .footer-blog-link:hover {
   color: var(--text-primary);
   border-bottom-color: var(--text-primary);
+}
+
+.footer-asombro-link {
+  font-family: 'Noto Serif SC', var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.footer-asombro-link:hover {
+  opacity: 1;
+  color: var(--accent-primary);
 }
 
 .footer-links {
@@ -81,8 +100,8 @@
     gap: 15px;
   }
 
-  .footer-blog-link {
-    align-self: center;
+  .footer-bottom-links {
+    justify-content: center;
   }
 
   .footer-links {

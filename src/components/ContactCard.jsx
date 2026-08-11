@@ -1,4 +1,5 @@
 import './ContactCard.css';
+import ExternalLink from './ExternalLink';
 import envelopeIcon from '../svgs/envelope-solid 2.svg';
 import githubIcon from '../svgs/github.svg';
 import linkedinIcon from '../svgs/linkedin.svg';
@@ -11,7 +12,7 @@ function ContactCard() {
         <div className="stamp-links">
           <StampLink href="mailto:contact@mail.alehxs.com" icon={envelopeIcon} label="Email" />
           <StampLink href="https://github.com/alehxs" icon={githubIcon} label="GitHub" />
-          <StampLink href="https://linkedin.com/in/asangurima" icon={linkedinIcon} label="LinkedIn" />
+          <StampLink href="https://linkedin.com/in/sangurima" icon={linkedinIcon} label="LinkedIn" />
         </div>
       </div>
     </div>
@@ -20,10 +21,10 @@ function ContactCard() {
 
 function StampLink({ href, icon, label }) {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer" className="stamp-link">
+    <ExternalLink href={href} className="stamp-link">
       <img src={icon} alt="" className="stamp-icon" width="28" height="28" />
       <span className="stamp-label">{label}</span>
-    </a>
+    </ExternalLink>
   );
 }
 

@@ -15,7 +15,6 @@ function Navbar() {
         <a href={isHome ? '#about' : '/#about'} className="navbar-link">About</a>
         <a href={isHome ? '#skills' : '/#skills'} className="navbar-link">Skills</a>
         <a href={isHome ? '#projects' : '/#projects'} className="navbar-link">Projects</a>
-        <Link to="/asombro" className="navbar-link">奇</Link>
       </div>
     </nav>
   );
