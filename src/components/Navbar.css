@@ -23,6 +23,10 @@
   border-radius: 6px;
 }
 
+.navbar-logo-img .logo-piece {
+  transition: fill-opacity 0.35s ease;
+}
+
 .navbar-links {
   display: flex;
   gap: 36px;
