@@ -9,7 +9,7 @@ function HeroSection() {
         <span className="hero-last">SANGURIMA</span>
       </h1>
       <div className="hero-rule"></div>
-      <p className="hero-tagline">"No wind favors he who has no destined port."</p>
+      <p className="hero-tagline">"Confine yourself to the present."</p>
     </div>
   );
 }
